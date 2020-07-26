@@ -1,3 +1,8 @@
+.navbar {
+    padding:8px 10vh 8px 10vh;
+    transition: ease 1s;
+}
+
 .navbar-toggler {
     border:none;
 }
@@ -5,6 +10,18 @@
 .navbar-toggler:focus {
     outline: none;
 }
+
+.navbar .show {
+    height:100vh;
+    transition: ease .8s;
+    overflow-y: hidden;
+}
+
+.navbar-collapse {
+    height: 0;
+    transition: ease .8s;
+}
+
 
 .hero {
     margin: 0 0 13vh 0;
@@ -16,6 +33,8 @@
 }
 
 .hero h1 {
+    font-weight: 700;
+    font-family: 'Rubik' !important;
     font-size: 8em;
     line-height: .9;
     color: rgba(255, 255, 255, 0.35);
@@ -26,6 +45,19 @@
 }
 
 .hero h2 {
+    font-weight: 500;
+    font-family: 'Rubik' !important;
     font-size: 1.5em;
+}
+
+.hero h2 span {
+    font-weight: 700;
+}
+
+.hero .lottie-container h4 {
+    text-align: center;
+    position: relative;
+    top:-25vh;
+    
 }
 

@@ -52,7 +52,7 @@ class Header extends Component {
     <Navbar
       expand="false"
       sticky="top"
-      bg="light"
+      bg="white"
       style={{
         marginBottom: `2vh`,
       }}
@@ -80,7 +80,7 @@ class Header extends Component {
       >
         {this.state.icon}
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav" display="flex">
         <Nav className="mr-auto">
         <Link to="/">Home</Link>
         <Link to="/page-2/">Page 2</Link> 
