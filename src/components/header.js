@@ -54,7 +54,7 @@ class Header extends Component {
       sticky="top"
       bg="light"
       style={{
-        marginBottom: `1.45rem`,
+        marginBottom: `2vh`,
       }}
     >
       <Link to="/">
@@ -62,8 +62,8 @@ class Header extends Component {
           <img
             alt="Kyle Luke Logo"
             src={Logo}
-            width="50"
-            height="50"
+            width="45"
+            height="45"
             className="d-inline-block"
             style={{
               marginBottom: 0,

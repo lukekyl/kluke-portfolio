@@ -1,0 +1,31 @@
+.navbar-toggler {
+    border:none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.hero {
+    margin: 0 0 13vh 0;
+    height: 80vh;
+    color: white;
+    background: rgb(39,2,126);
+    background: linear-gradient(20deg, rgba(39,2,126,1) 0%, rgba(101,9,159,1) 35%, rgba(254,121,0,1) 100%);
+    padding: 10%;
+}
+
+.hero h1 {
+    font-size: 8em;
+    line-height: .9;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.hero h1 span {
+    color: white;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+}
+
