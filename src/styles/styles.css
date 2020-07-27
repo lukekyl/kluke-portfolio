@@ -12,16 +12,30 @@
 }
 
 .navbar .show {
-    height:100vh;
+    height:90vh;
     transition: ease .8s;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .navbar-collapse {
-    height: 0;
+    overflow:hidden;
+    height: 90vh;
     transition: ease .8s;
+    display: flex;
 }
 
+.navbar-nav {
+    margin:auto;
+    flex-direction: row;
+}
+
+.navbar-nav a {
+    color: #fa7511;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10vh;
+    text-decoration: none;
+}
 
 .hero {
     margin: 0 0 13vh 0;
