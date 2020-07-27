@@ -75,6 +75,14 @@
     
 }
 
+.project-grid .card-deck {
+    margin:0 -15px;
+}
+
+.project-grid .card-deck .project {
+    margin:5px 5px;
+}
+
 .project {
     border-radius: 0;
 }
@@ -99,7 +107,6 @@
 .project-card .project-links {
     font-size: .9em;
     text-align: right;
-    padding-top:.4rem;
     margin-bottom: .4rem;
 }
 
@@ -113,4 +120,17 @@
     font-size: .8em;
     text-align: right;
     margin-bottom: 0;
+}
+
+.project-card .project-links a {
+    margin:2px;
+}
+
+.project .card-footer {
+    padding:.2rem 1.25rem;
+}
+
+.project .card-footer small {
+    font-size: .8em;
+    line-height: .9;
 }

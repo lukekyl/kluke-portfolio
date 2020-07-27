@@ -7,7 +7,7 @@ import * as moodbubble from "../images/5283-mood-bubble.json"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Image from "../components/image"
-import { CardDeck, Card, Row, Col } from "react-bootstrap"
+import { CardDeck, Card, Row, Col, Button } from "react-bootstrap"
 
 
   const defaultOptions = {
@@ -54,11 +54,11 @@ const IndexPage = () => (
           <Card.Body className="project-card">
             <Row>
               <Col><Card.Title className="project-title">postpandemic</Card.Title></Col>
-              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+              <Col><p className="project-links"><Button size="sm" href="https://github.com/lukekyl/postpandemic" target="_blank">Github</Button><Button size="sm" href="https://postpandemic.herokuapp.com/" target="_blank">Demo</Button></p></Col>
             </Row>
             <Card.Text>
               <Row>
-                <Col><p className="project-description">A single page web application providing messages of hope for a world recovering from the Coronavirus Pandemic.</p></Col>
+                <Col md={8}><p className="project-description">A single page web application providing messages of hope for a world recovering from the Coronavirus Pandemic.</p></Col>
                 <Col><p className="project-type">React Frontend + Rails Backend</p></Col>
               </Row>
             </Card.Text>
@@ -72,11 +72,11 @@ const IndexPage = () => (
           <Card.Body className="project-card">
             <Row>
               <Col><Card.Title className="project-title">HellaFresh</Card.Title></Col>
-              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+              <Col><p className="project-links"><Button size="sm" href="https://github.com/lukekyl/HellaFresh" target="_blank">Github</Button><Button size="sm" href="https://hellafresh.herokuapp.com/" target="_blank">Demo</Button></p></Col>
             </Row>
             <Card.Text>
               <Row>
-                <Col><p className="project-description">A single page online ordering web application template for all types of delivery services.</p></Col>
+                <Col md={8}><p className="project-description">A single page online ordering web application template for all types of delivery services.</p></Col>
                 <Col><p className="project-type">Javascript Frontend + Rails Backend</p></Col>
               </Row>
             </Card.Text>
@@ -90,11 +90,11 @@ const IndexPage = () => (
           <Card.Body className="project-card">
             <Row>
               <Col><Card.Title className="project-title">Filtered.</Card.Title></Col>
-              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+              <Col><p className="project-links"><Button size="sm" href="https://github.com/lukekyl/Filtered" target="_blank">Github</Button><Button size="sm" href="https://filteredcoffee.herokuapp.com/" target="_blank">Demo</Button></p></Col>
             </Row>
             <Card.Text>
               <Row>
-                <Col><p className="project-description">An app for coffee lovers. Filtered lets users review the coffee they try and find new favorites.</p></Col>
+                <Col md={8}><p className="project-description">An app for coffee lovers. Filtered lets users review the coffee they try and find new favorites.</p></Col>
                 <Col><p className="project-type">Ruby on Rails MVC Application with OmniAuth</p></Col>
               </Row>
             </Card.Text>
