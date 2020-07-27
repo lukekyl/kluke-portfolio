@@ -1,12 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Emoji from "react-emoji-render"
 import Lottie from "react-lottie"
 import * as moodbubble from "../images/5283-mood-bubble.json"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+// import Image from "../components/image"
+import { CardDeck, Card, Row, Col } from "react-bootstrap"
 
 
   const defaultOptions = {
@@ -45,13 +46,70 @@ const IndexPage = () => (
         <h4>See My Work</h4>
       </div>
     </div>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="project-grid">
+      <h2>Selected Projects</h2>
+      <CardDeck>
+        {/* Postpandemic */}
+        <Card className="project dev js rails" data-cat="web ux ui">
+          <Card.Body className="project-card">
+            <Row>
+              <Col><Card.Title className="project-title">postpandemic</Card.Title></Col>
+              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+            </Row>
+            <Card.Text>
+              <Row>
+                <Col><p className="project-description">A single page web application providing messages of hope for a world recovering from the Coronavirus Pandemic.</p></Col>
+                <Col><p className="project-type">React Frontend + Rails Backend</p></Col>
+              </Row>
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Ruby on Rails • React • Redux • Redux Thunk • React Bootstrap • Unsplash API • CSS Animations</small>
+          </Card.Footer>
+        </Card>
+        {/* HellaFresh */}
+        <Card className="project dev js rails" data-cat="web ux ui">
+          <Card.Body className="project-card">
+            <Row>
+              <Col><Card.Title className="project-title">HellaFresh</Card.Title></Col>
+              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+            </Row>
+            <Card.Text>
+              <Row>
+                <Col><p className="project-description">A single page online ordering web application template for all types of delivery services.</p></Col>
+                <Col><p className="project-type">Javascript Frontend + Rails Backend</p></Col>
+              </Row>
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Ruby on Rails • ECMAScript 6 Vanilla Javascript • Foundation Frontend Framework</small>
+          </Card.Footer>
+        </Card>
+        {/* Filtered. */}
+        <Card className="project dev js rails" data-cat="web ux ui">
+          <Card.Body className="project-card">
+            <Row>
+              <Col><Card.Title className="project-title">Filtered.</Card.Title></Col>
+              <Col><p className="project-links">Github &nbsp; | &nbsp; Demo </p></Col>
+            </Row>
+            <Card.Text>
+              <Row>
+                <Col><p className="project-description">An app for coffee lovers. Filtered lets users review the coffee they try and find new favorites.</p></Col>
+                <Col><p className="project-type">Ruby on Rails MVC Application with OmniAuth</p></Col>
+              </Row>
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Ruby on Rails • Secure Login with Devise and OmniAuth • Foundation Frontend Framework</small>
+          </Card.Footer>
+        </Card>
+      </CardDeck>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div> */}
+
   </Layout>
 )
 
