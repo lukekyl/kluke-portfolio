@@ -123,6 +123,7 @@
 }
 
 .project-card .project-links a {
+    padding:2px 4px;
     margin:2px;
 }
 
