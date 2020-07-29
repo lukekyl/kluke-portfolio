@@ -8,7 +8,7 @@ import * as moodbubble from "../images/5283-mood-bubble.json"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Image from "../components/image"
-import { CardDeck, Card, Row, Col, Button } from "react-bootstrap"
+import { CardDeck, Card, Container, Row, Col, Button } from "react-bootstrap"
 
 
   const defaultOptions = {
@@ -36,7 +36,7 @@ const IndexPage = () => {
         animation: { effects: "scale", easing: "ease" },
       })
 
-      mixer.filter(".dev .js .rails")
+      mixer.filter(".dev, .js, .rails, .design")
     }
 
       
@@ -70,6 +70,15 @@ const IndexPage = () => {
           </div>
           <div className="project-grid">
             <h2>Selected Projects</h2>
+            
+            <ul className="filters">
+                <li><Button className="filter" data-filter=".dev, .js, .rails">All</Button></li>
+                <li><Button className="filter" data-filter=".dev">Development</Button></li>
+                <li><Button className="filter" data-filter=".js">JavaScript</Button></li>
+                <li><Button className="filter" data-filter=".rails">Rails</Button></li>
+                <li><Button className="filter" data-filter=".design">Design</Button></li>
+            </ul>
+
             <CardDeck>
               {/* Postpandemic */}
               <Card className="project dev js rails" data-cat="dev js rails">

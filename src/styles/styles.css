@@ -75,8 +75,23 @@
     
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+}
+
+.filters li {
+    list-style: none;
+    display: inline-flex;
+    padding: 0 1vw;
+}
+
+.project-grid {
+    overflow: hidden;
+}
+
 .project-grid .card-deck {
-    margin:0 -15px;
+    margin:0 -5px;
 }
 
 .project-grid .card-deck .project {
