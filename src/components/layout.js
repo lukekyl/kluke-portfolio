@@ -15,6 +15,7 @@ import Footer from "./footer"
 
 import "../styles/layout.css"
 import "../styles/styles.css"
+import "../styles/mixitup.scss"
 
 
 const Layout = ({ children }) => {
