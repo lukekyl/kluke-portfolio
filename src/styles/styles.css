@@ -156,6 +156,11 @@
     margin:2px;
 }
 
+.project-button {
+    background-color:rgba(0, 0, 0, 0.03);
+    border:1px solid rgba(0, 0, 0, 0.125);
+}
+
 .project .card-footer {
     padding:.2rem 1.25rem;
 }

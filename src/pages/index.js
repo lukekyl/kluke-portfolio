@@ -74,86 +74,47 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="project-grid">
-            <h2>Selected Projects</h2>
+            <h2 id="selected-projects">Selected Projects</h2>
 
             <ul className="filters">
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".dev, .frontend, .backend, .js, .react, .rails, .design"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".dev, .frontend, .backend, .js, .react, .rails, .design" >
                   All
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".dev"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".dev" >
                   Development
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".frontend"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".frontend" >
                   Frontend
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".backend"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".backend" >
                   Backend
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".js"
+                <Button variant="light" size="sm" className="filter" data-filter=".js"
                 >
                   JavaScript
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".react"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".react" >
                   React
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".rails"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".rails" >
                   Rails
                 </Button>
               </li>
               <li>
-                <Button
-                  variant="light"
-                  size="sm"
-                  className="filter"
-                  data-filter=".design"
-                >
+                <Button variant="light" size="sm" className="filter" data-filter=".design" >
                   Design
                 </Button>
               </li>
@@ -161,10 +122,7 @@ const IndexPage = () => {
 
             <CardDeck>
               {/* Postpandemic */}
-              <Card
-                className="project dev frontend backend js react rails"
-                data-cat="dev frontend backend js react rails"
-              >
+              <Card className="project dev frontend backend js react rails" data-cat="dev frontend backend js react rails">
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -173,14 +131,14 @@ const IndexPage = () => {
                       </Card.Title>
                     </Col>
                     <Col className="project-links">
-                      <Button
+                      <Button className="project-button" variant="outline-dark"
                         size="sm"
                         href="https://github.com/lukekyl/postpandemic"
                         target="_blank"
                       >
                         Github
                       </Button>
-                      <Button
+                      <Button className="project-button" variant="outline-dark"
                         size="sm"
                         href="https://postpandemic.herokuapp.com/"
                         target="_blank"
@@ -211,10 +169,7 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* HellaFresh */}
-              <Card
-                className="project dev frontend backend js rails"
-                data-cat="dev frontend backend js rails"
-              >
+              <Card className="project dev frontend backend js rails" data-cat="dev frontend backend js rails" >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -222,40 +177,36 @@ const IndexPage = () => {
                         HellaFresh
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Button
-                          size="sm"
-                          href="https://github.com/lukekyl/HellaFresh"
-                          target="_blank"
-                        >
-                          Github
-                        </Button>
-                        <Button
-                          size="sm"
-                          href="https://hellafresh.herokuapp.com/"
-                          target="_blank"
-                        >
-                          Demo
-                        </Button>
-                      </p>
+                    <Col className="project-links">
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://github.com/lukekyl/HellaFresh"
+                        target="_blank"
+                      >
+                        Github
+                      </Button>
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://hellafresh.herokuapp.com/"
+                        target="_blank"
+                      >
+                        Demo
+                      </Button>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          A single page online ordering web application template
-                          for all types of delivery services.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          Javascript Frontend + Rails Backend
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        A single page online ordering web application template
+                        for all types of delivery services.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        Javascript Frontend + Rails Backend
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -265,10 +216,7 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* Filtered. */}
-              <Card
-                className="project dev frontend backend rails"
-                data-cat="dev frontend backend rails"
-              >
+              <Card className="project dev frontend backend rails" data-cat="dev frontend backend rails" >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -276,40 +224,36 @@ const IndexPage = () => {
                         Filtered.
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Button
-                          size="sm"
-                          href="https://github.com/lukekyl/Filtered"
-                          target="_blank"
-                        >
-                          Github
-                        </Button>
-                        <Button
-                          size="sm"
-                          href="https://filteredcoffee.herokuapp.com/"
-                          target="_blank"
-                        >
-                          Demo
-                        </Button>
-                      </p>
+                    <Col className="project-links">
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://github.com/lukekyl/Filtered"
+                        target="_blank"
+                      >
+                        Github
+                      </Button>
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://filteredcoffee.herokuapp.com/"
+                        target="_blank"
+                      >
+                        Demo
+                      </Button>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          An app for coffee lovers. Filtered lets users review
-                          the coffee they try and find new favorites.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          Ruby on Rails MVC Application with OmniAuth
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        An app for coffee lovers. Filtered lets users review the
+                        coffee they try and find new favorites.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        Ruby on Rails MVC Application with OmniAuth
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -319,10 +263,7 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* Marzano Research */}
-              <Card
-                className="project dev frontend design"
-                data-cat="dev frontend design"
-              >
+              <Card className="project dev frontend design" data-cat="dev frontend design" >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -330,40 +271,36 @@ const IndexPage = () => {
                         Marzano Research
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Button
-                          size="sm"
-                          href="https://github.com/lukekyl/Filtered"
-                          target="_blank"
-                        >
-                          Website
-                        </Button>
-                        <Button
-                          size="sm"
-                          href="https://filteredcoffee.herokuapp.com/"
-                          target="_blank"
-                        >
-                          More
-                        </Button>
-                      </p>
+                    <Col className="project-links">
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://www.marzanoresearch.com"
+                        target="_blank"
+                      >
+                        Website
+                      </Button>
+                      <Link to='/page-2/'>
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                      >
+                        More
+                      </Button>
+                      </Link>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          Lead design efforts for new ownership rebranding and
-                          all client-based design needs.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          Website, Infographics, Handouts, etc.
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        Lead design efforts for new ownership rebranding and all
+                        client-based design needs.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        Website, Infographics, Handouts, etc.
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -373,10 +310,7 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* REL Central Website */}
-              <Card
-                className="project dev frontend js"
-                data-cat="dev frontend js"
-              >
+              <Card className="project dev frontend js" data-cat="dev frontend js" >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -384,38 +318,36 @@ const IndexPage = () => {
                         REL Central Website
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Button
-                          size="sm"
-                          href="https://github.com/lukekyl/postpandemic"
-                          target="_blank"
-                        >
-                          Website
-                        </Button>
-                        <Button
-                          size="sm"
-                          href="https://postpandemic.herokuapp.com/"
-                          target="_blank"
-                        >
-                          More
-                        </Button>
-                      </p>
+                    <Col className="project-links">
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                        href="https://ies.ed.gov/ncee/edlabs/regions/central/index.asp"
+                        target="_blank"
+                      >
+                        Website
+                      </Button>
+                      <Link to='/page-2/'>
+                      <Button className="project-button" variant="outline-dark"
+                        size="sm"
+                      >
+                        More
+                      </Button>
+                      </Link>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          Development and management of REL Central portion of
-                          the Insitute of Educational Sciences website.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">HTML, CSS, JavaScript</p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        Development and management of REL Central portion of the
+                        Insitute of Educational Sciences website.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        HTML, CSS, JavaScript
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -433,29 +365,25 @@ const IndexPage = () => {
                         REL Central Design
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Link to="/page-2/">
-                          <Button size="sm">See More</Button>
-                        </Link>
-                      </p>
+                    <Col className="project-links">
+                      <Link to="/page-2/">
+                        <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
+                      </Link>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          Graphic design work for REL Central of the Insitute of
-                          Educational Sciences.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          Report graphics, Infographics, Handouts, etc.
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        Graphic design work for REL Central of the Insitute of
+                        Educational Sciences.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        Report graphics, Infographics, Handouts, etc.
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -465,38 +393,31 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* WebAct */}
-              <Card
-                className="project dev frontend design"
-                data-cat="dev frontend design"
-              >
+              <Card className="project dev frontend design" data-cat="dev frontend design">
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
                       <Card.Title className="project-title">WebAct</Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Link to="/page-2/">
-                          <Button size="sm">See More</Button>
-                        </Link>
-                      </p>
+                    <Col className="project-links">
+                      <Link to="/page-2/">
+                        <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
+                      </Link>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          Website design agency for small business specializing
-                          in SEO and PPC ad campaign management.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          Websites, SEO management, PPC campaigns
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        Website design agency for small business specializing in
+                        SEO and PPC ad campaign management.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        Websites, SEO management, PPC campaigns
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -514,29 +435,25 @@ const IndexPage = () => {
                         Karsh Hagan
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Link to="/page-2/">
-                          <Button size="sm">See More</Button>
-                        </Link>
-                      </p>
+                    <Col className="project-links">
+                      <Link to="/page-2/">
+                        <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
+                      </Link>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          UX Design internship mixed with some art direction and
-                          graphic design for non-profits.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          UX Design, Graphic Design
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        UX Design internship mixed with some art direction and
+                        graphic design for non-profits.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        UX Design, Graphic Design
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -554,27 +471,23 @@ const IndexPage = () => {
                         Personal Design
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
+                    <Col className="project-links">
                         <Link to="/page-2/">
-                          <Button size="sm">See More</Button>
+                          <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
                         </Link>
-                      </p>
                     </Col>
                   </Row>
-                  <Card.Text>
                     <Row>
                       <Col md={8}>
-                        <p className="project-description">
+                        <Card.Text className="project-description">
                           A few of the fun projects I have made, because ... why
                           not!
-                        </p>
+                        </Card.Text>
                       </Col>
                       <Col>
-                        <p className="project-type">Personal Design Projects</p>
+                        <Card.Text className="project-type">Personal Design Projects</Card.Text>
                       </Col>
                     </Row>
-                  </Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
