@@ -2,17 +2,21 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Emoji from "react-emoji-render"
-import { Navbar} from "react-bootstrap"
+import { Navbar, Container, Row, Col} from "react-bootstrap"
 // import Logo from '../images/KLogo.svg'
 
 
 const Footer = ({ siteTitle }) => (
   <Navbar sticky="bottom"  
   style={{
-    marginTop: `10vh`,
+    marginTop: `8vh`,
   }}
   >
-    {siteTitle} © {new Date().getFullYear()} | Gatsby & React | Made with&nbsp;<Emoji text="❤️" />&nbsp;by Kyle Luke
+  <Container fluid>
+    <Row style={{ margin: '0',width: '100%'}}>
+      <Col>Made with&nbsp;<Emoji text="❤️" />&nbsp;by Kyle Luke</Col><Col style={{ textAlign: 'right'}}>© {new Date().getFullYear()}</Col>
+    </Row>
+  </Container>
   </Navbar>
 )
 

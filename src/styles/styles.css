@@ -1,5 +1,6 @@
 .navbar {
     padding:8px 10vh 8px 10vh;
+    margin:0;
     transition: ease 1s;
 }
 
@@ -12,17 +13,18 @@
 }
 
 .navbar .show {
-    height:90vh;
-    transition: ease .8s;
+    height: 91.5vh;
+    transition:ease-out .8s;
     overflow: hidden;
 }
 
 .navbar-collapse {
     overflow:hidden;
-    height: 90vh;
-    transition: ease .8s;
+    height: 0;
     display: flex;
+    transition: ease .4s;
 }
+
 
 .navbar-nav {
     margin:auto;
@@ -76,8 +78,7 @@
 }
 
 .filters {
-    display: flex;
-    justify-content: center;
+    text-align: right;
 }
 
 .filters li {
@@ -113,6 +114,7 @@
 
 .project {
     border-radius: 0;
+    flex-basis: calc(33.3% - 10px) !important;
 }
 
 .project:hover {

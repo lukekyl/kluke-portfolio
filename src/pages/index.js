@@ -74,8 +74,11 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="project-grid">
+          <Row>
+            <Col lg={3}>
             <h2 id="selected-projects">Selected Projects</h2>
-
+            </Col>
+            <Col lg={9}>
             <ul className="filters">
               <li>
                 <Button variant="light" size="sm" className="filter" data-filter=".dev, .frontend, .backend, .js, .react, .rails, .design" >
@@ -119,6 +122,8 @@ const IndexPage = () => {
                 </Button>
               </li>
             </ul>
+            </Col>
+          </Row>
 
             <CardDeck>
               {/* Postpandemic */}

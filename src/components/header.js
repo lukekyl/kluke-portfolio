@@ -53,9 +53,6 @@ class Header extends Component {
       expand="false"
       sticky="top"
       bg="white"
-      style={{
-        marginBottom: `2vh`,
-      }}
     >
       <Link to="/">
         <Navbar.Brand>
