@@ -86,11 +86,29 @@
     padding: 0 1vw;
 }
 
+.filter {
+    background-color:transparent;
+    border-color: transparent;
+    color: darkgray;
+}
+
+.filter:global(.active) {
+    background-color:tomato;
+    color: white;
+}
+
+.filter:hover {
+    border-color: tomato;
+    background-color:transparent;
+    color: darkgray;
+}
+
 .project-grid {
     overflow: hidden;
 }
 
 .project-grid .card-deck {
+    padding: 0;
     margin:0 -5px;
 }
 
@@ -137,7 +155,7 @@
     margin-bottom: 0;
 }
 
-.project-card .project-links a {
+.project-card .project-links a, .project-card .project-links a button {
     padding:2px 4px;
     margin:2px;
 }

@@ -58,7 +58,7 @@ class Header extends Component {
       }}
     >
       <Link to="/">
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <img
             alt="Kyle Luke Logo"
             src={Logo}
