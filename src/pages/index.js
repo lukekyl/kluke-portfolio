@@ -33,7 +33,12 @@ const IndexPage = () => {
         selectors: {
           target: ".project",
         },
-        animation: { effects: "scale", easing: "ease" },
+        animation: {
+          duration: 500,
+          nudge: true,
+          reverseOut: false,
+          effects: "fade translateZ(-100px) ease",
+        },
       })
 
       mixer.filter(".dev, .js, .rails, .design")
@@ -74,6 +79,8 @@ const IndexPage = () => {
             <ul className="filters">
               <li>
                 <Button
+                  variant="light"
+                  size="sm"
                   className="filter"
                   data-filter=".dev, .frontend, .backend, .js, .react, .rails, .design"
                 >
@@ -81,37 +88,72 @@ const IndexPage = () => {
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".dev">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".dev"
+                >
                   Development
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".frontend">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".frontend"
+                >
                   Frontend
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".backend">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".backend"
+                >
                   Backend
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".js">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".js"
+                >
                   JavaScript
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".react">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".react"
+                >
                   React
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".rails">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".rails"
+                >
                   Rails
                 </Button>
               </li>
               <li>
-                <Button className="filter" data-filter=".design">
+                <Button
+                  variant="light"
+                  size="sm"
+                  className="filter"
+                  data-filter=".design"
+                >
                   Design
                 </Button>
               </li>
@@ -120,7 +162,9 @@ const IndexPage = () => {
             <CardDeck>
               {/* Postpandemic */}
               <Card
-                className="project dev frontend backend js react rails" data-cat="dev frontend backend js react rails" >
+                className="project dev frontend backend js react rails"
+                data-cat="dev frontend backend js react rails"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -128,41 +172,36 @@ const IndexPage = () => {
                         postpandemic
                       </Card.Title>
                     </Col>
-                    <Col>
-                      <p className="project-links">
-                        <Button
-                          size="sm"
-                          href="https://github.com/lukekyl/postpandemic"
-                          target="_blank"
-                        >
-                          Github
-                        </Button>
-                        <Button
-                          size="sm"
-                          href="https://postpandemic.herokuapp.com/"
-                          target="_blank"
-                        >
-                          Demo
-                        </Button>
-                      </p>
+                    <Col className="project-links">
+                      <Button
+                        size="sm"
+                        href="https://github.com/lukekyl/postpandemic"
+                        target="_blank"
+                      >
+                        Github
+                      </Button>
+                      <Button
+                        size="sm"
+                        href="https://postpandemic.herokuapp.com/"
+                        target="_blank"
+                      >
+                        Demo
+                      </Button>
                     </Col>
                   </Row>
-                  <Card.Text>
-                    <Row>
-                      <Col md={8}>
-                        <p className="project-description">
-                          A single page web application providing messages of
-                          hope for a world recovering from the Coronavirus
-                          Pandemic.
-                        </p>
-                      </Col>
-                      <Col>
-                        <p className="project-type">
-                          React Frontend + Rails Backend
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Text>
+                  <Row>
+                    <Col md={8}>
+                      <Card.Text className="project-description">
+                        A single page web application providing messages of hope
+                        for a world recovering from the Coronavirus Pandemic.
+                      </Card.Text>
+                    </Col>
+                    <Col>
+                      <Card.Text className="project-type">
+                        React Frontend + Rails Backend
+                      </Card.Text>
+                    </Col>
+                  </Row>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">
@@ -172,7 +211,10 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* HellaFresh */}
-              <Card className="project dev frontend backend js rails" data-cat="dev frontend backend js rails">
+              <Card
+                className="project dev frontend backend js rails"
+                data-cat="dev frontend backend js rails"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -223,7 +265,10 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* Filtered. */}
-              <Card className="project dev frontend backend rails" data-cat="dev frontend backend rails">
+              <Card
+                className="project dev frontend backend rails"
+                data-cat="dev frontend backend rails"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -274,7 +319,10 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* Marzano Research */}
-              <Card className="project dev frontend design" data-cat="dev frontend design">
+              <Card
+                className="project dev frontend design"
+                data-cat="dev frontend design"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -325,7 +373,10 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* REL Central Website */}
-              <Card className="project dev frontend js" data-cat="dev frontend js">
+              <Card
+                className="project dev frontend js"
+                data-cat="dev frontend js"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>
@@ -414,7 +465,10 @@ const IndexPage = () => {
                 </Card.Footer>
               </Card>
               {/* WebAct */}
-              <Card className="project dev frontend design" data-cat="dev frontend design">
+              <Card
+                className="project dev frontend design"
+                data-cat="dev frontend design"
+              >
                 <Card.Body className="project-card">
                   <Row>
                     <Col>

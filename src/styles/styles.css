@@ -92,16 +92,11 @@
     color: darkgray;
 }
 
-.filter:global(.active) {
-    background-color:tomato;
-    color: white;
+.filter.focus, .filter:focus, .filters li:focus, .filters li.focus {
+    background-color:#F2795B;
+    box-shadow: none;
 }
 
-.filter:hover {
-    border-color: tomato;
-    background-color:transparent;
-    color: darkgray;
-}
 
 .project-grid {
     overflow: hidden;
@@ -141,6 +136,7 @@
     font-size: .9em;
     text-align: right;
     margin-bottom: .4rem;
+    
 }
 
 .project-card .project-description {
