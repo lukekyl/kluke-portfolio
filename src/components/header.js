@@ -4,6 +4,8 @@ import { Navbar, Nav } from "react-bootstrap"
 import { RiMenuLine, RiMenu5Line, RiMenu4Line, RiCloseLine } from "react-icons/ri"
 import Logo from '../images/KLogo.svg'
 
+import About from './about'
+
 
 let iconStandard = <RiMenu5Line />
 let iconHover = <RiMenuLine />
@@ -79,8 +81,7 @@ class Header extends Component {
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" display="flex">
         <Nav className="mr-auto">
-        <Link to="/">Home</Link>
-        <Link to="/page-2/">Page 2</Link> 
+          <About />
         </Nav>
       </Navbar.Collapse>
     </Navbar>

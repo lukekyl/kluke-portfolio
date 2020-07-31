@@ -112,6 +112,10 @@
     margin:5px 5px;
 }
 
+.project-grid h2, .project-grid ul {
+    margin-bottom: 0;
+}
+
 .project {
     border-radius: 0;
     flex-basis: calc(33.3% - 10px) !important;
