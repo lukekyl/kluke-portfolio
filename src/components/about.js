@@ -19,14 +19,14 @@ const About = ({ siteTitle }) => (
           padding: `0 auto`,
         }}
       >
-      <h2>Kyle Luke</h2>
+      <h2>About Me</h2>
         <Row className="about-icons">
             <Col><MdLaptopMac /><br />Develop</Col>
             <Col><FaMountain /><br />Adventure</Col>
             <Col><MdPhotoLibrary /><br />Design</Col>
         </Row>
         <Col>
-            <p><i>"But I don't want comfort. I want poetry. I want danger. I want freedom. I want goodness. I want sin."</i><br />&mdash; Brave New World</p>
+            <p>Hi! My name's Kyle, I am a designer turned developer focused on frontend dev with experience in backend.</p>
             <p>Creating things is my jam.<br />Visually engaging design.<br />Purposeful and story driven content.<br />Continuously learning.<br />Pushing boundaries.</p>
         </Col>
         <Row className="contact-icons">
