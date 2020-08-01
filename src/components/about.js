@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Row, Col, Button } from "react-bootstrap"
-import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai"
 import { FaMountain, FaDev, FaGithubSquare } from "react-icons/fa"
 import { MdLaptopMac, MdPhotoLibrary, MdEmail } from "react-icons/md"
 // import Logo from '../images/KLogo.svg'

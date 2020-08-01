@@ -18,7 +18,7 @@ const SecondPage = () => (
       style={{
         backgroundImage: `url(${Hero})`,
         backgroundSize: "cover",
-        backgroundPosition: "50% 75%",
+        backgroundPosition: "50% 65%",
       }}
     >
       <div className="hero-copy flex-grow-1">{/* <h1>Karsh Hagan</h1> */}</div>
@@ -91,15 +91,16 @@ const SecondPage = () => (
         />
         <img
           alt="Test"
-          src={Image4}
+          src={ImageGif}
           className="d-inline-block"
           style={{
+            width:'100%',
             marginBottom: 0,
           }}
         />
         <img
           alt="Test"
-          src={ImageGif}
+          src={Image4}
           className="d-inline-block"
           style={{
             marginBottom: 0,
