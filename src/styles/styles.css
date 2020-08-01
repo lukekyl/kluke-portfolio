@@ -241,4 +241,20 @@
     line-height: .9;
 }
 
+.project-hero {
+    margin: 0 0 13vh 0;
+    height: 50vh;
+    background-repeat: no-repeat;
+}
 
+.project-hero h1 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.project-stick .sticky-top {
+    top: 21vh;
+}
+
+.project-body {
+    margin: 0 0 13vh 0;
+}
