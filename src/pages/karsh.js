@@ -3,16 +3,19 @@ import { Row, Col, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../images/projects/karsh/patriotsGrid.jpg"
-import Image1 from '../images/projects/karsh/PFP-Portfolio-Display-1.jpg'
-import Image2 from "../images/projects/karsh/PFP-Portfolio-Display-2.jpg"
-import Image3 from "../images/projects/karsh/PFP-Portfolio-Display-3.jpg"
-import Image4 from "../images/projects/karsh/PFP-Portfolio-Display-4.jpg"
-import ImageGif from "../images/projects/karsh/FinalGIF.gif"
+import Image1 from '../images/projects/karsh/karsh-projectphoto-1.jpg'
+import Image2 from "../images/projects/karsh/karsh-projectphoto-2.jpg"
+import Image3 from "../images/projects/karsh/karsh-projectphoto-3.jpg"
+import Image4 from "../images/projects/karsh/karsh-projectphoto-4.jpg"
+import ImageGif from "../images/projects/karsh/karsh-projectphoto-5.gif"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
+// import { useStaticQuery, graphql } from "gatsby"
+// import Img from 'gatsby-image'
 
 const pageId="karsh"
+
 
 class KarshHagan extends Component {
   state = {
@@ -27,6 +30,30 @@ class KarshHagan extends Component {
 
 
   render() {
+
+    // const data = useStaticQuery(graphql`
+    //   query MyQuery {
+    //     allFile(filter: {name: {regex: "/(karsh)/"}, relativeDirectory: {eq: "projects/karsh"}}) {
+    //       edges {
+    //         node {
+    //           base
+    //           childImageSharp {
+    //             fluid {
+    //               aspectRatio
+    //               base64
+    //               sizes
+    //               srcSet
+    //               src
+    //             }
+    //           }
+    //           relativePath
+    //           relativeDirectory
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
+
     return (
       <Layout>
         <SEO title="Karsh Hagan" />
@@ -140,6 +167,9 @@ class KarshHagan extends Component {
                 marginBottom: 0,
               }}
             />
+            {/* {data.allFile.edges.map(({node}) => 
+              <Img fluid={node.childImageSharp.fluid} alt="test" className="d-inline-block" style={{marginBottom:0}} />
+            )} */}
           </Col>
         </Row>
         <ProjectGrid page={pageId} />
