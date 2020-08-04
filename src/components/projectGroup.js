@@ -1,9 +1,14 @@
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { Component } from "react"
-import { CardDeck, Card, Row, Col, Button } from "react-bootstrap"
+import { Card, Row, Col, Button } from 'react-bootstrap'
 
-class ProjectList extends Component {
+import ProjectButtons from './project-buttons'
+// import ProjectList from "./project-list"
+
+
+
+class ProjectGroup extends Component {
   state = {
     'marzano': 'marzano',
     'relsite': 'relsite',
@@ -13,16 +18,19 @@ class ProjectList extends Component {
     'personal': 'personal'
   }
   componentDidMount() {
+    
     if (this.props.page !== null) {
       this.setState({
         [this.props.page]: `active`
       })
     }
+
   }
 
   render() {
-    return (
-      <CardDeck>
+      return(
+      <div className="project-grid project-group">
+        <ProjectButtons />
         {/* Postpandemic */}
         <Card className="project dev frontend backend js react rails" data-cat="dev frontend backend js react rails">
           <Card.Body className="project-card">
@@ -182,10 +190,10 @@ class ProjectList extends Component {
                   Website
                 </Button>
                 <Link to='/page-2/'>
-                <Button className="project-button" variant="outline-dark"
-                  size="sm"
-                >
-                  More
+                  <Button className="project-button" variant="outline-dark"
+                    size="sm"
+                  >
+                    More
                 </Button>
                 </Link>
               </Col>
@@ -229,10 +237,10 @@ class ProjectList extends Component {
                   Website
                 </Button>
                 <Link to='/page-2/'>
-                <Button className="project-button" variant="outline-dark"
-                  size="sm"
-                >
-                  More
+                  <Button className="project-button" variant="outline-dark"
+                    size="sm"
+                  >
+                    More
                 </Button>
                 </Link>
               </Col>
@@ -338,7 +346,7 @@ class ProjectList extends Component {
                 </Card.Title>
               </Col>
               <Col className="project-links">
-                <Link to="/karsh/">
+                <Link to="/page-2/">
                   <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
                 </Link>
               </Col>
@@ -374,22 +382,22 @@ class ProjectList extends Component {
                 </Card.Title>
               </Col>
               <Col className="project-links">
-                  <Link to="/page-2/">
-                    <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
-                  </Link>
+                <Link to="/page-2/">
+                  <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
+                </Link>
               </Col>
             </Row>
-              <Row>
-                <Col md={8}>
-                  <Card.Text className="project-description">
-                    A few of the fun projects I have made, because ... why
-                    not!
+            <Row>
+              <Col md={8}>
+                <Card.Text className="project-description">
+                  A few of the fun projects I have made, because ... why
+                  not!
                   </Card.Text>
-                </Col>
-                <Col>
-                  <Card.Text className="project-type">Personal Design Projects</Card.Text>
-                </Col>
-              </Row>
+              </Col>
+              <Col>
+                <Card.Text className="project-type">Personal Design Projects</Card.Text>
+              </Col>
+            </Row>
           </Card.Body>
           <Card.Footer>
             <small className="text-muted">
@@ -398,17 +406,17 @@ class ProjectList extends Component {
             </small>
           </Card.Footer>
         </Card>
-      </CardDeck>
-    )
+      </div>
+     )
   }
 }
 
-ProjectList.propTypes = {
+ProjectGroup.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-ProjectList.defaultProps = {
+ProjectGroup.defaultProps = {
   siteTitle: ``,
 }
 
-export default ProjectList
+export default ProjectGroup

@@ -188,7 +188,6 @@
 
 .project:hover {
     border: 1px solid;
-    
     border-image-slice: 1;
     border-width: 1px;
     border-image-source: linear-gradient(20deg, rgba(39,2,126,1) 0%, rgba(101,9,159,1) 35%, rgba(254,121,0,1) 100%);
@@ -222,10 +221,16 @@
     margin-bottom: 0;
 }
 
-.project-card .project-links a, .project-card .project-links a button {
+.project-card .project-links .project-button {
     padding:2px 4px;
+}
+
+
+.project-card .project-links a {
+    padding:2px 0px;
     margin:2px;
 }
+
 
 .project-button {
     background-color:rgba(0, 0, 0, 0.03);
@@ -242,7 +247,7 @@
 }
 
 .project-hero {
-    margin: 0 0 13vh 0;
+    margin: 0 0 8vh 0;
     height: 50vh;
     background-repeat: no-repeat;
 }
@@ -252,9 +257,36 @@
 }
 
 .project-stick .sticky-top {
-    top: 21vh;
+    z-index: 999;
+    top: 18vh;
 }
 
 .project-body {
     margin: 0 0 13vh 0;
+}
+
+.project-group .card {
+    margin:.5vw .5vh;
+}
+
+.project-grid #active {
+    color: white;
+    border:1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(39,2,126,1);
+}
+
+.project-grid #active .card-footer {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+}
+
+.project-grid #active button {
+    background-color:rgba(255, 255, 255, 0.9);
+    border:1px solid rgba(255, 255, 255, 0.125);
+}
+
+.project-grid #active button:hover {
+    border:1px solid white;
+    background-color: #212529;
 }

@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import { Navbar, Nav } from "react-bootstrap"
-import { RiMenuLine, RiMenu5Line, RiMenu4Line, RiCloseLine } from "react-icons/ri"
+import { RiMenuLine, RiMenu5Line, RiCloseLine } from "react-icons/ri"
 import Logo from '../images/KLogo.svg'
 
 import About from './about'
