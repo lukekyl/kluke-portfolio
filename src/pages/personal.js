@@ -46,7 +46,7 @@ class Personal extends Component {
             <div className="sticky-top">
               <Card>
                 <Card.Body>
-                  <h2>Personal Projects</h2>
+                  <h2>Personal Design</h2>
                   <p>
                     A few of the fun projects I have made, because ... why not!
                   </p>
