@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Emoji from "react-emoji-render"
 import Lottie from "react-lottie"
-import * as moodbubble from "../images/5283-mood-bubble.json"
+import * as moodbubble from "../images/lottie/5283-mood-bubble.json"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -59,7 +59,7 @@ class IndexPage extends Component {
                 isStopped={false}
                 isPaused={false}
               />
-              <AnchorLink href="#selected-projects" offset='100'>
+              <AnchorLink href="#selected-projects" offset='75'>
                 <h4>See My Work</h4>
               </AnchorLink>
             </div>

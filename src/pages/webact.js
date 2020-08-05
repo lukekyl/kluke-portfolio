@@ -2,19 +2,19 @@ import React, { Component } from "react"
 import { Row, Col, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/personal/personalHero.jpg"
-import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
+import Hero from "../images/projects/webact/webactHero.jpg"
+import Image1 from '../images/projects/webact/webact-projectphoto-1.jpg'
+import Image2 from "../images/projects/webact/webact-projectphoto-2.jpg"
+import Image3 from "../images/projects/webact/webact-projectphoto-3.jpg"
+import Image4 from "../images/projects/webact/webact-projectphoto-4.gif"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
 
-const pageId="personal"
+const pageId="webact"
 
  
-class Personal extends Component {
+class Webact extends Component {
   state = {
     mixer: ``
   }
@@ -28,7 +28,7 @@ class Personal extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="personal" />
+        <SEO title="webact" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
@@ -46,15 +46,16 @@ class Personal extends Component {
             <div className="sticky-top">
               <Card>
                 <Card.Body>
-                  <h2>Personal Projects</h2>
+                  <h2>WebAct</h2>
                   <p>
-                    A few of the fun projects I have made, because ... why not!
+                    Website design agency for small business specializing in SEO
+                    and PPC ad campaign management.
                   </p>
                 </Card.Body>
                 <Card.Footer>
                   <small>
-                    Adobe CC Suite • Figma • Invision Suite • Fun Stuff •
-                    Getting My Hands Dirty
+                    Duda Website Builder • Google Adwords Certified & Google
+                    Partner • SEO Best Practices
                   </small>
                 </Card.Footer>
               </Card>
@@ -62,13 +63,18 @@ class Personal extends Component {
           </Col>
           <Col lg={9}>
             <p>
-              I like to make fun things. Design is a passion of mine and I spend
-              probably too much time playing with different personal projects,
-              from building things with my hands, to designing things digitally.
-              Some of the most recent projects include a lookbook for a local
-              distillery in my hometown, a tribute to my favorite design
-              movement, a different take on a classic magazine, and a handmade
-              book toasting one of my favorite hobbies.
+              With many options for a quick and easy website, many times
+              it leaves unexperienced business owners with the question of which
+              one offers the features they will need at the most cost effective price. 
+              WebAct has partnered with the Duda website builder, which offers 
+              small business owners a simple DIY solution with many of the SEO and 
+              online shop features to be desired.
+            </p>
+            <p>
+              During my time at WebAct, I became certified in both Google Adwords 
+              and as a Google Partner. I was able to build websites for several online 
+              retail clients, optimize website SEO rankings across targeted keywords, and manage 
+              Pay-Per-Click campaigns across several platforms for targeted advertising.
             </p>
 
             <img
@@ -117,4 +123,4 @@ class Personal extends Component {
 }
 
 
-export default Personal
+export default Webact

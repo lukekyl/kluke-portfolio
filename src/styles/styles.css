@@ -283,7 +283,8 @@
 .project-grid #active {
     color: white;
     border:1px solid rgba(255, 255, 255, 0.6);
-    background: rgba(39,2,126,1);
+    background: #3c4043;
+    background: linear-gradient(20deg, rgba(39,2,126,1) 25%, rgba(101,9,159,.9) 60%, rgba(254,121,0,1) 100%);
 }
 
 .project-grid #active .card-footer {
@@ -298,6 +299,6 @@
 }
 
 .project-grid #active button:hover {
-    border:1px solid white;
+    border:1px solid rgba(255, 255, 255, 0.6);
     background-color: #212529;
 }

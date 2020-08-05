@@ -302,7 +302,7 @@ class ProjectList extends Component {
                 <Card.Title className="project-title">WebAct</Card.Title>
               </Col>
               <Col className="project-links">
-                <Link to="/page-2/">
+                <Link to="/webact/">
                   <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
                 </Link>
               </Col>
