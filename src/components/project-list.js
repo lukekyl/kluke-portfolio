@@ -374,7 +374,7 @@ class ProjectList extends Component {
                 </Card.Title>
               </Col>
               <Col className="project-links">
-                  <Link to="/page-2/">
+                  <Link to="/personal/">
                     <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
                   </Link>
               </Col>

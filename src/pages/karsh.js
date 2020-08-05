@@ -16,7 +16,7 @@ import Mixer from '../components/mixer'
 
 const pageId="karsh"
 
-
+ 
 class KarshHagan extends Component {
   state = {
     mixer: ``
@@ -56,7 +56,7 @@ class KarshHagan extends Component {
 
     return (
       <Layout>
-        <SEO title="Karsh Hagan" />
+        <SEO title="karsh" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
@@ -167,9 +167,10 @@ class KarshHagan extends Component {
                 marginBottom: 0,
               }}
             />
-            {/* {data.allFile.edges.map(({node}) => 
-              <Img fluid={node.childImageSharp.fluid} alt="test" className="d-inline-block" style={{marginBottom:0}} />
-            )} */}
+            {/* {data.allFile.edges.map(({node}) => {
+              console.log(node)
+              return node
+            })} */}
           </Col>
         </Row>
         <ProjectGrid page={pageId} />
