@@ -1,14 +1,11 @@
 import React, { Component } from "react"
-// import { Link } from "gatsby"
-// import mixitup from "mixitup"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import Emoji from "react-emoji-render"
 import Lottie from "react-lottie"
 import * as moodbubble from "../images/5283-mood-bubble.json"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Image from "../components/image"
-// import { CardDeck, Card, Row, Col, Button } from "react-bootstrap"
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
 
@@ -54,6 +51,7 @@ class IndexPage extends Component {
             </div>
             <div className="lottie-container">
               <Lottie
+                role={"none"}
                 options={defaultOptions}
                 height={"60vh"}
                 width={"60vh"}
@@ -61,7 +59,9 @@ class IndexPage extends Component {
                 isStopped={false}
                 isPaused={false}
               />
-              <h4>See My Work</h4>
+              <AnchorLink href="#selected-projects" offset='100'>
+                <h4>See My Work</h4>
+              </AnchorLink>
             </div>
           </div>
           <ProjectGrid />

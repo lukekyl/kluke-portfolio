@@ -136,10 +136,21 @@
 }
 
 .hero .lottie-container h4 {
+    color:white;
+    text-decoration: none;
     text-align: center;
     position: relative;
     top:-25vh;
     
+}
+
+.hero .lottie-container h4:hover, .hero .lottie-container a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.hero .lottie-container *[role=button]{
+   cursor: default;
 }
 
 .filters {
