@@ -293,12 +293,12 @@
     border-radius: 0;
 }
 
-.project-grid #active button {
+.project-grid #active button, .project-grid #active .project-button {
     background-color:rgba(255, 255, 255, 0.9);
     border:1px solid rgba(255, 255, 255, 0.125);
 }
 
-.project-grid #active button:hover {
+.project-grid #active button:hover, .project-grid #active .project-button:hover {
     border:1px solid rgba(255, 255, 255, 0.6);
     background-color: #212529;
 }

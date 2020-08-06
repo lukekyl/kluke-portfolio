@@ -181,7 +181,7 @@ class ProjectList extends Component {
                 >
                   Website
                 </Button>
-                <Link to='/page-2/'>
+                <Link to='/marzano/'>
                 <Button className="project-button" variant="outline-dark"
                   size="sm"
                 >
@@ -228,7 +228,7 @@ class ProjectList extends Component {
                 >
                   Website
                 </Button>
-                <Link to='/page-2/'>
+                <Link to='/relsite/'>
                 <Button className="project-button" variant="outline-dark"
                   size="sm"
                 >
@@ -241,7 +241,7 @@ class ProjectList extends Component {
               <Col md={8}>
                 <Card.Text className="project-description">
                   Development and management of REL Central portion of the
-                  Insitute of Educational Sciences website.
+                  Institute of Educational Sciences website.
                 </Card.Text>
               </Col>
               <Col>
@@ -268,7 +268,7 @@ class ProjectList extends Component {
                 </Card.Title>
               </Col>
               <Col className="project-links">
-                <Link to="/page-2/">
+                <Link to="/reldesign/">
                   <Button className="project-button" size="sm" variant="outline-dark">See More</Button>
                 </Link>
               </Col>
@@ -276,7 +276,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={8}>
                 <Card.Text className="project-description">
-                  Graphic design work for REL Central of the Insitute of
+                  Graphic design work for REL Central of the Institute of
                   Educational Sciences.
                 </Card.Text>
               </Col>
