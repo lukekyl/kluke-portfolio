@@ -7,10 +7,10 @@ import Image1 from '../images/projects/reldesign/reldesign-projectphoto-1.jpg'
 import Image2 from "../images/projects/reldesign/reldesign-projectphoto-2.jpg"
 import Image3 from "../images/projects/reldesign/reldesign-projectphoto-3.jpg"
 import Image4 from "../images/projects/reldesign/reldesign-projectphoto-4.jpg"
-import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.png"
-import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.png"
-import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.png"
-import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.png"
+import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.jpg"
+import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.jpg"
+import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.jpg"
+import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
