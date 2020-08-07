@@ -1,12 +1,15 @@
 import React, { Component } from "react"
-import { Row, Col, Card, Button } from "react-bootstrap"
+import { Row, Col, Card, Button, CardColumns } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../images/projects/marzano/marzanoHero.jpg"
-import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
+import Image1 from '../images/projects/marzano/marzano-projectphoto-1.jpg'
+import Image2 from "../images/projects/marzano/marzano-projectphoto-2.jpg"
+import Image3 from "../images/projects/marzano/marzano-projectphoto-3.jpg"
+import Image4 from "../images/projects/marzano/marzano-projectphoto-4.jpg"
+import Image5 from "../images/projects/marzano/marzano-projectphoto-5.jpg"
+import Image6 from "../images/projects/marzano/marzano-projectphoto-6.jpg"
+import Image7 from "../images/projects/marzano/marzano-projectphoto-7.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -87,43 +90,29 @@ class Marzano extends Component {
               client projects also require a variety of design work including
               wireframes, handouts and infographics.
             </p>
-
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
+            <CardColumns>
+              <Card>
+                <Card.Img src={Image1} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image2} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image7} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image3} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image4} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image5} alt="Test" />
+              </Card>
+              <Card>
+                <Card.Img src={Image6} alt="Test" />
+              </Card>
+            </CardColumns>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />

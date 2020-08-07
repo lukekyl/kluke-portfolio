@@ -14,8 +14,9 @@ import Header from "./header"
 import Footer from "./footer"
 
 import "../styles/layout.css"
-import "../styles/styles.css"
+import "../styles/styles.scss"
 import "../styles/mixitup.scss"
+import "../styles/projectimages.scss"
 
 
 const Layout = ({ children }) => {
