@@ -63,56 +63,42 @@ class Webact extends Component {
           </Col>
           <Col lg={9}>
             <p>
-              With many options for a quick and easy website, many times
-              it leaves unexperienced business owners with the question of which
-              one offers the features they will need at the most cost effective price. 
-              WebAct has partnered with the Duda website builder, which offers 
-              small business owners a simple DIY solution with many of the SEO and 
-              online shop features to be desired.
+              With many options for a quick and easy website, many times it
+              leaves unexperienced business owners with the question of which
+              one offers the features they will need at the most cost effective
+              price. WebAct has partnered with the Duda website builder, which
+              offers small business owners a simple DIY solution with many of
+              the SEO and online shop features to be desired.
             </p>
             <p>
-              During my time at WebAct, I became certified in both Google Adwords 
-              and as a Google Partner. I was able to build websites for several online 
-              retail clients, optimize website SEO rankings across targeted keywords, and manage 
-              Pay-Per-Click campaigns across several platforms for targeted advertising.
+              During my time at WebAct, I became certified in both Google
+              Adwords and as a Google Partner. I was able to build websites for
+              several online retail clients, optimize website SEO rankings
+              across targeted keywords, and manage Pay-Per-Click campaigns
+              across several platforms for targeted advertising.
             </p>
-
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
+            <Card className="no-radius">
+              <Card.Img
+                src={Image1}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image2}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image3}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image4}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+            </Card>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />

@@ -10,9 +10,11 @@ import Image4 from "../images/projects/marzano/marzano-projectphoto-4.jpg"
 import Image5 from "../images/projects/marzano/marzano-projectphoto-5.jpg"
 import Image6 from "../images/projects/marzano/marzano-projectphoto-6.jpg"
 import Image7 from "../images/projects/marzano/marzano-projectphoto-7.jpg"
+import Image8 from "../images/projects/marzano/marzano-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
+import Zoom from "react-medium-image-zoom"
 
 const pageId="marzano"
 
@@ -91,27 +93,46 @@ class Marzano extends Component {
               wireframes, handouts and infographics.
             </p>
             <CardColumns>
-              <Card>
-                <Card.Img src={Image1} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image2} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image7} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image3} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image4} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image5} alt="Test" />
-              </Card>
-              <Card>
-                <Card.Img src={Image6} alt="Test" />
-              </Card>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image1} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image2} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image8} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image7} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image3} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image4} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image6} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image5} alt="Test" />
+                </Card>
+              </Zoom>
             </CardColumns>
           </Col>
         </Row>

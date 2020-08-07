@@ -1,3 +1,7 @@
+img {
+    margin: 0;
+}
+
 .navbar {
     padding:8px 10vh 8px 10vh;
     margin:0;
@@ -303,6 +307,18 @@
     background-color: #212529;
 }
 
-.project-body .card img {
-    margin:0;
+.no-radius .card-img {
+    border-radius: 0 !important;
+}
+
+.project-body .card-columns .card {
+    margin-bottom:.75rem;
+}
+
+.project-body .card-columns button {
+    cursor: zoom-in;
+}
+
+button[aria-label="Unzoom image"] {
+    cursor: zoom-out;
 }

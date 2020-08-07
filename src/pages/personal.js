@@ -70,43 +70,28 @@ class Personal extends Component {
               movement, a different take on a classic magazine, and a handmade
               book toasting one of my favorite hobbies.
             </p>
-
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
+            <Card className="no-radius">
+              <Card.Img
+                src={Image1}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image2}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image3}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image4}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+            </Card>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />

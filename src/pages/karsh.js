@@ -124,64 +124,33 @@ class KarshHagan extends Component {
               campaign that would maximize Pets for Patriots awareness along
               with a conversion focused landing page design aimed at donations.
             </p>
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={ImageGif}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            {/* {data.allFile.edges.map(({node}) => {
-              console.log(node)
-              return node
-            })} */}
+            <Card className="no-radius">
+              <Card.Img
+                src={Image1}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image2}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image3}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={ImageGif}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Card.Img
+                src={Image4}
+                alt="Test"
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+            </Card>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />

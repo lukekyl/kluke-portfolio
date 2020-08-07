@@ -1,15 +1,20 @@
 import React, { Component } from "react"
-import { Row, Col, Card } from "react-bootstrap"
+import { Row, Col, CardColumns, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../images/projects/reldesign/reldesignHero.jpg"
-import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
+import Image1 from '../images/projects/reldesign/reldesign-projectphoto-1.jpg'
+import Image2 from "../images/projects/reldesign/reldesign-projectphoto-2.jpg"
+import Image3 from "../images/projects/reldesign/reldesign-projectphoto-3.jpg"
+import Image4 from "../images/projects/reldesign/reldesign-projectphoto-4.jpg"
+import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.png"
+import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.png"
+import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.png"
+import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.png"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
+import Zoom from "react-medium-image-zoom"
 
 const pageId="reldesign"
 
@@ -63,8 +68,8 @@ class Reldesign extends Component {
           </Col>
           <Col lg={9}>
             <p>
-              The Regional Educational Laboratory (REL) Central is a division
-              of the Institute of Education Science that serves 7 states in the
+              The Regional Educational Laboratory (REL) Central is a division of
+              the Institute of Education Science that serves 7 states in the
               central region. The 10 RELs work in partnership with educators and
               policymakers to develop and use research that improves academic
               outcomes for students. The work they do includes Research Reports,
@@ -73,47 +78,53 @@ class Reldesign extends Component {
             <p>
               As the sole graphic and web designer for the contract, I have had
               the pleasure of producing a broad variety of design work for the
-              REL Central team. These include report graphics, presentations, swag,
-              templates, handouts, and infographics. IES requires all online
-              content be 508 Compliant, meeting WCAG 2.0 AA accessibility standards.
+              REL Central team. These include report graphics, presentations,
+              swag, templates, handouts, and infographics. IES requires all
+              online content be 508 Compliant, meeting WCAG 2.0 AA accessibility
+              standards.
             </p>
-
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
+            <CardColumns>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image2} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image3} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image5} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image1} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image4} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image6} alt="Test" />
+                </Card>
+              </Zoom>
+            </CardColumns>
+            <Zoom>
+              <Card>
+                <Card.Img src={Image8} alt="Test" />
+              </Card>
+            </Zoom>
+            <Zoom>
+              <Card>
+                <Card.Img src={Image7} alt="Test" />
+              </Card>
+            </Zoom>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />

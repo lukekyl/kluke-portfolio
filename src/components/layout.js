@@ -17,6 +17,7 @@ import "../styles/layout.css"
 import "../styles/styles.scss"
 import "../styles/mixitup.scss"
 import "../styles/projectimages.scss"
+import "react-medium-image-zoom/dist/styles.css"
 
 
 const Layout = ({ children }) => {

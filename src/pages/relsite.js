@@ -1,15 +1,16 @@
 import React, { Component } from "react"
-import { Row, Col, Card, Button } from "react-bootstrap"
+import { Row, Col, CardColumns, Card, Button } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../images/projects/relsite/relsiteHero.jpg"
-import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
+import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
+import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
+import Image3 from "../images/projects/relsite/relsite-projectphoto-3.jpg"
+import Image4 from "../images/projects/relsite/relsite-projectphoto-4.png"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
+import Zoom from "react-medium-image-zoom"
 
 const pageId="relsite"
 
@@ -84,47 +85,32 @@ class Relsite extends Component {
               updates on research findings, tools, and releases. As the web
               developer for the REL Central team, I manage the REL Central
               portion of the IES website, running on an ASP framework and built
-              with HTML, CSS, and JavaScript. IES requires it's website and
-              online content be 508 Compliant, meeting WCAG 2.0 AA accessibility
-              standards.
+              with HTML, CSS, and JavaScript. IES requires a Public Trust 5c 
+              security clearance, and for it's website and online content be 
+              508 Compliant, meeting WCAG 2.0 AA accessibility standards.
             </p>
-
-            <img
-              alt="Test"
-              src={Image1}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image2}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image3}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
-            <img
-              alt="Test"
-              src={Image4}
-              className="d-inline-block"
-              style={{
-                marginBottom: 0,
-                width: "100%",
-              }}
-            />
+            <CardColumns>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image1} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image3} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image2} alt="Test" />
+                </Card>
+              </Zoom>
+              <Zoom>
+                <Card>
+                  <Card.Img src={Image4} alt="Test" />
+                </Card>
+              </Zoom>
+            </CardColumns>
           </Col>
         </Row>
         <ProjectGrid page={pageId} />
