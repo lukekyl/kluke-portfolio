@@ -6,7 +6,7 @@ import Hero from "../images/projects/relsite/relsiteHero.jpg"
 import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
 import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
 import Image3 from "../images/projects/relsite/relsite-projectphoto-3.jpg"
-import Image4 from "../images/projects/relsite/relsite-projectphoto-4.png"
+import Image4 from "../images/projects/relsite/relsite-projectphoto-4.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'

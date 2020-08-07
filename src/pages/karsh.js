@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Row, Col, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/karsh/patriotsGrid.jpg"
+import Hero from "../images/projects/karsh/karshHero.jpg"
 import Image1 from '../images/projects/karsh/karsh-projectphoto-1.jpg'
 import Image2 from "../images/projects/karsh/karsh-projectphoto-2.jpg"
 import Image3 from "../images/projects/karsh/karsh-projectphoto-3.jpg"
