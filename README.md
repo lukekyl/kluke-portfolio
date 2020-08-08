@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="/">
-    <img alt="KL" src="/images/KLogo.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Kyle Luke's Portfolio
 </h1>
