@@ -95,42 +95,42 @@ class Marzano extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="Test" />
+                  <Card.Img src={Image1} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="Test" />
+                  <Card.Img src={Image2} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image8} alt="Test" />
+                  <Card.Img src={Image8} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image7} alt="Test" />
+                  <Card.Img src={Image7} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="Test" />
+                  <Card.Img src={Image3} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="Test" />
+                  <Card.Img src={Image4} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image6} alt="Test" />
+                  <Card.Img src={Image6} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image5} alt="Test" />
+                  <Card.Img src={Image5} alt="Marzano Research project example image." />
                 </Card>
               </Zoom>
             </CardColumns>

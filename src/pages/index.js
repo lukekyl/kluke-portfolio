@@ -38,31 +38,31 @@ class IndexPage extends Component {
         <Layout>
           <SEO title="Home" />
           <div className="hero d-flex align-items-center">
-            <div className="hero-copy flex-grow-1">
-              <h1>
-                Hi.
-                <br />
-                I'm <span>Kyle</span>.
-              </h1>
-              <h2>
-                I'm a <span>Designer turned Developer</span> in Denver{" "}
-                <Emoji text=":v:" style={{ fontSize: "1.7em" }} />
-              </h2>
-            </div>
-            <div className="lottie-container">
-              <Lottie
-                role={"none"}
-                options={defaultOptions}
-                height={"60vh"}
-                width={"60vh"}
-                speed={0.1}
-                isStopped={false}
-                isPaused={false}
-              />
-              <AnchorLink href="#selected-projects" offset='75'>
-                <h4>See My Work</h4>
-              </AnchorLink>
-            </div>
+                <div className="hero-copy flex-grow-1">
+                  <h1>
+                    Hi.
+                    <br />
+                    I'm <span>Kyle</span>.
+                  </h1>
+                  <h2>
+                    I'm a <span>Designer turned Developer</span> in Denver{" "}
+                    <Emoji text=":v:" style={{ fontSize: "1.7em" }} />
+                  </h2>
+                </div>
+              <div className="lottie-container d-none d-lg-block" >
+                  <Lottie
+                    role={"none"}
+                    options={defaultOptions}
+                    height={"60vh"}
+                    width={"60vh"}
+                    speed={0.1}
+                    isStopped={false}
+                    isPaused={false}
+                  />
+                  <AnchorLink href="#selected-projects" offset='75'>
+                    <h4>See My Work</h4>
+                  </AnchorLink>
+              </div>
           </div>
           <ProjectGrid />
           {this.state.mixer}

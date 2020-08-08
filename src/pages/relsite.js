@@ -92,22 +92,22 @@ class Relsite extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="Test" />
+                  <Card.Img src={Image1} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="Test" />
+                  <Card.Img src={Image3} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="Test" />
+                  <Card.Img src={Image2} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="Test" />
+                  <Card.Img src={Image4} alt="REL Central project example image." />
                 </Card>
               </Zoom>
             </CardColumns>

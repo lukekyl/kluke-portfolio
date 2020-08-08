@@ -127,27 +127,27 @@ class KarshHagan extends Component {
             <Card className="no-radius">
               <Card.Img
                 src={Image1}
-                alt="Test"
+                alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
               />
               <Card.Img
                 src={Image2}
-                alt="Test"
+                alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
               />
               <Card.Img
                 src={Image3}
-                alt="Test"
+                alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
               />
               <Card.Img
                 src={ImageGif}
-                alt="Test"
+                alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
               />
               <Card.Img
                 src={Image4}
-                alt="Test"
+                alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
               />
             </Card>

@@ -139,13 +139,17 @@ img {
     font-weight: 700;
 }
 
+.hero .lottie-container {
+    overflow: hidden;
+    justify-content: center;
+}
+
 .hero .lottie-container h4 {
     color:white;
     text-decoration: none;
     text-align: center;
     position: relative;
     top:-25vh;
-    
 }
 
 .hero .lottie-container h4:hover, .hero .lottie-container a:hover{
@@ -154,7 +158,10 @@ img {
 }
 
 .hero .lottie-container *[role=button]{
-   cursor: default;
+    overflow: hidden;
+    cursor: default;
+    width: 60vh;
+    height: 60vh;
 }
 
 .filters {
@@ -186,6 +193,7 @@ img {
 .project-grid .card-deck {
     padding: 0;
     margin:0 -5px;
+    justify-content: center;
 }
 
 .project-grid .card-deck .project {
@@ -198,7 +206,6 @@ img {
 
 .project {
     border-radius: 0;
-    flex-basis: calc(33.3% - 10px) !important;
 }
 
 .project:hover {
@@ -321,4 +328,158 @@ img {
 
 button[aria-label="Unzoom image"] {
     cursor: zoom-out;
+}
+
+
+
+// Media Options
+
+//xs
+@media screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+    
+    .filters li, .filters li .btn {
+        padding:0 3px !important;
+        line-height: .2;
+    }
+
+    .hero .lottie-container *[role=button]{
+        width: 30vh;
+        height: 40vh;
+    }
+
+    .hero .lottie-container {
+        margin-top: -30vh;
+
+    }
+
+    .lottie-container svg {
+        height: 80vh !important;
+        width: 80vw !important;
+    }
+
+}
+
+//sm
+@media screen and (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 4em;
+    }
+    
+    .project-card .project-links {
+        text-align: right !important;
+    }
+
+    .project-card .project-type {
+        text-align: right !important;
+        margin: 0;
+    }
+
+    .filters li, .filters li .btn {
+        padding:0 4px;
+        font-size: .75rem;
+    }
+
+    .hero h1 {
+        font-size: 5em;
+    }
+
+    .hero h2 {
+        font-size: 1.3em;
+    }
+
+    .project-grid h2 {
+        font-size: 1.3em;
+    }
+
+    .navbar {
+        padding: 10px 1vh 10px 1vh;
+    }
+
+    .footer, .copywrite {
+        text-align: center !important;
+    }
+
+    .about {
+        margin: 1vh !important;
+        width: 95vw !important;
+    }
+
+    .about-icons {
+        font-size: 1em;
+    }
+
+    .project-stick {
+        margin-bottom: 4vh;
+    }
+
+}
+
+//small-medium
+@media screen and (max-width: 994px) {
+    .filters {
+        text-align: center;
+    }
+
+    .project-grid h2 {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 6em;
+    }
+
+    .hero h2 {
+        font-size: 1.3em;
+    }
+
+    .project-grid h2 {
+        font-size: 1.3em;
+    }
+
+}
+
+//md
+@media screen and (max-width: 1200px) {
+    .project-card .project-links {
+        text-align: left !important;
+    }
+
+    .project-card .project-type {
+        text-align: left !important;
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 7em;
+    }
+
+    .hero h2 {
+        font-size: 1.3em;
+    }
+
+    .project-grid h2 {
+        font-size: 1.3em;
+    }
+
+}
+
+//lg
+
+@media screen and (max-width: 1440px) {
+    .project-grid h2 {
+        font-size: 1.2rem;
+    }
+    .filters li {
+        padding:0 .1vw;
+    }
+
+
+
 }

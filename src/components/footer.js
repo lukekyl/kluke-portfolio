@@ -7,14 +7,16 @@ import { Navbar, Container, Row, Col} from "react-bootstrap"
 
 
 const Footer = ({ siteTitle }) => (
-  <Navbar sticky="bottom"  
+  <Navbar 
+  sticky="bottom"  
+  className="footer"
   style={{
     marginTop: `8vh`,
   }}
   >
   <Container fluid>
     <Row style={{ margin: '0',width: '100%'}}>
-      <Col>Made with&nbsp;<Emoji text="❤️" />&nbsp;by Kyle Luke</Col><Col style={{ textAlign: 'right'}}>© {new Date().getFullYear()}</Col>
+        <Col sm={12} md={6}>Made with&nbsp;<Emoji text="❤️" />&nbsp;by Kyle Luke</Col><Col className="copywrite" sm={12} md={6} style={{ textAlign: 'right'}}>© {new Date().getFullYear()}</Col>
     </Row>
   </Container>
   </Navbar>

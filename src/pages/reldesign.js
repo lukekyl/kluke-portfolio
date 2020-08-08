@@ -86,43 +86,43 @@ class Reldesign extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="Test" />
+                  <Card.Img src={Image2} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="Test" />
+                  <Card.Img src={Image3} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image5} alt="Test" />
+                  <Card.Img src={Image5} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="Test" />
+                  <Card.Img src={Image1} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="Test" />
+                  <Card.Img src={Image4} alt="REL Central project example image." />
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image6} alt="Test" />
+                  <Card.Img src={Image6} alt="REL Central project example image." />
                 </Card>
               </Zoom>
             </CardColumns>
             <Zoom>
               <Card>
-                <Card.Img src={Image8} alt="Test" />
+                <Card.Img src={Image8} alt="REL Central project example image." />
               </Card>
             </Zoom>
             <Zoom>
               <Card>
-                <Card.Img src={Image7} alt="Test" />
+                <Card.Img src={Image7} alt="REL Central project example image." />
               </Card>
             </Zoom>
           </Col>

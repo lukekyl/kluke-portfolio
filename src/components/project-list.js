@@ -27,8 +27,8 @@ class ProjectList extends Component {
         <Card className="project dev frontend backend js react rails" data-cat="dev frontend backend js react rails">
           <Card.Body className="project-card">
             <Row>
-              <Col>
-                <Card.Title className="project-title">
+              <Col md={8} lg={12} xl={8}>
+                <Card.Title className="project-title" >
                   postpandemic
                 </Card.Title>
               </Col>
@@ -50,7 +50,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   A single page web application providing messages of hope
                   for a world recovering from the Coronavirus Pandemic.
@@ -74,7 +74,7 @@ class ProjectList extends Component {
         <Card className="project dev frontend backend js rails" data-cat="dev frontend backend js rails" >
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   HellaFresh
                 </Card.Title>
@@ -97,7 +97,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   A single page online ordering web application template
                   for all types of delivery services.
@@ -121,7 +121,7 @@ class ProjectList extends Component {
         <Card className="project dev frontend backend rails" data-cat="dev frontend backend rails" >
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   Filtered.
                 </Card.Title>
@@ -144,7 +144,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   An app for coffee lovers. Filtered lets users review the
                   coffee they try and find new favorites.
@@ -168,7 +168,7 @@ class ProjectList extends Component {
         <Card id={this.state.marzano} className="project dev frontend design" data-cat="dev frontend design" >
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   Marzano Research
                 </Card.Title>
@@ -191,7 +191,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   Lead design efforts for new ownership rebranding and all
                   client-based design needs.
@@ -215,7 +215,7 @@ class ProjectList extends Component {
         <Card id={this.state.relsite} className="project dev frontend js" data-cat="dev frontend js" >
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   REL Central Website
                 </Card.Title>
@@ -238,7 +238,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   Development and management of REL Central portion of the
                   Institute of Educational Sciences website.
@@ -262,7 +262,7 @@ class ProjectList extends Component {
         <Card id={this.state.reldesign} className="project design" data-cat="design">
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   REL Central Design
                 </Card.Title>
@@ -274,7 +274,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   Graphic design work for REL Central of the Institute of
                   Educational Sciences.
@@ -298,7 +298,7 @@ class ProjectList extends Component {
         <Card id={this.state.webact} className="project dev frontend design" data-cat="dev frontend design">
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">WebAct</Card.Title>
               </Col>
               <Col className="project-links">
@@ -308,7 +308,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   Website design agency for small business specializing in
                   SEO and PPC ad campaign management.
@@ -332,7 +332,7 @@ class ProjectList extends Component {
         <Card id={this.state.karsh} className="project design" data-cat="design">
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   Karsh Hagan
                 </Card.Title>
@@ -344,7 +344,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
             <Row>
-              <Col md={8}>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Text className="project-description">
                   UX Design internship mixed with some art direction and
                   graphic design for non-profits.
@@ -368,7 +368,7 @@ class ProjectList extends Component {
         <Card id={this.state.personal} className="project dev design" data-cat="dev design">
           <Card.Body className="project-card">
             <Row>
-              <Col>
+              <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
                   Personal Design
                 </Card.Title>
@@ -380,7 +380,7 @@ class ProjectList extends Component {
               </Col>
             </Row>
               <Row>
-                <Col md={8}>
+                <Col md={7} lg={12} xl={8}>
                   <Card.Text className="project-description">
                     A few of the fun projects I have made, because ... why
                     not!
