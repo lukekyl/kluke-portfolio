@@ -1,6 +1,6 @@
 <p align="center">
   <a href="/">
-    <img alt="Gatsby" src="./images/KLogo.svg" width="60" />
+    <img alt="KL" src="/images/KLogo.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
