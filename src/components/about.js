@@ -7,6 +7,8 @@ import { FaMountain, FaDev, FaGithubSquare } from "react-icons/fa"
 import { MdLaptopMac, MdPhotoLibrary, MdEmail } from "react-icons/md"
 // import Logo from '../images/KLogo.svg'
 
+import Resume from '../images/resume/KyleLuke_Resume.pdf'
+
 
 
 
@@ -30,7 +32,7 @@ const About = ({ siteTitle }) => (
             <p>Creating things is my jam.<br />Visually engaging design.<br />Purposeful and story driven content.<br />Continuously learning.<br />Pushing boundaries.</p>
         </Col>
         <Row className="contact-icons">
-            <Col><Button variant="dark" href="/" >Download Resume</Button></Col>
+            <Col><Button variant="dark" href={Resume} target="_blank">Download Resume</Button></Col>
         </Row>
         <hr />
         <Row className="contact-icons">
