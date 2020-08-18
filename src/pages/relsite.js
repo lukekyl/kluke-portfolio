@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { Row, Col, CardColumns, Card, Button } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Hero from "../images/projects/relsite/relsiteHero.jpg"
 import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
 import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
@@ -13,6 +15,33 @@ import Mixer from '../components/mixer'
 import Zoom from "react-medium-image-zoom"
 
 const pageId="relsite"
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-1.jpg" }) {
+      ...fluidImage
+    }
+    imageTwo: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-2.jpg" }) {
+      ...fluidImage
+    }
+    imageThree: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-3.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;
 
  
 class Relsite extends Component {
@@ -92,7 +121,8 @@ class Relsite extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="REL Central project example image." />
+                    <Img fluid={this.props.data.imageOne.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }} style={{width:'32vw'}} />
+                  {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -119,6 +149,5 @@ class Relsite extends Component {
     )
   }
 }
-
 
 export default Relsite
