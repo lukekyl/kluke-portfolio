@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kyle Luke Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Hi! I'm Kyle Luke. I'm a Designer turned Developer in Denver. Check out my portfolio site!`,
     author: `Kyle Luke`,
   },
   plugins: [
