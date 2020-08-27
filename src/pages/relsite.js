@@ -132,25 +132,25 @@ class Relsite extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Img fluid={this.props.data.imageOne.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  <Img fluid={this.props.data.imageOne.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} alt="REL Central project example image." />
                   {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Img fluid={this.props.data.imageThree.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  <Img fluid={this.props.data.imageThree.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }}  alt="REL Central project example image." />
                   {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Img fluid={this.props.data.imageTwo.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  <Img fluid={this.props.data.imageTwo.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} alt="REL Central project example image." />
                   {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Img fluid={this.props.data.imageFour.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  <Img fluid={this.props.data.imageFour.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} alt="REL Central project example image." />
                   {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
