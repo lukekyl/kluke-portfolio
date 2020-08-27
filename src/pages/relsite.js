@@ -81,15 +81,15 @@ class Relsite extends Component {
             // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 30%",
-            overflow:'hidden',
+            overflow: "hidden",
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="REL Central project example image."
+          />
           <div className="hero-copy flex-grow-1">
-            <Img
-              fluid={this.props.data.projectHero.childImageSharp.fluid}
-              imgStyle={{ objectFit: "cover" }}
-              alt="REL Central project example image."
-            />
             {/* <h1>Karsh Hagan</h1> */}
           </div>
         </div>
