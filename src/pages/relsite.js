@@ -30,18 +30,29 @@ export const fluidImage = graphql`
 `;
 
 export const pageQuery = graphql`
-  query {
-    imageOne: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-1.jpg" }) {
-      ...fluidImage
-    }
-    imageTwo: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-2.jpg" }) {
-      ...fluidImage
-    }
-    imageThree: file(relativePath: { eq: "projects/relsite/relsite-projectphoto-3.jpg" }) {
-      ...fluidImage
-    }
-  }
-`;
+         query {
+           imageOne: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
 
  
 class Relsite extends Component {
@@ -114,30 +125,33 @@ class Relsite extends Component {
               updates on research findings, tools, and releases. As the web
               developer for the REL Central team, I manage the REL Central
               portion of the IES website, running on an ASP framework and built
-              with HTML, CSS, and JavaScript. IES requires a Public Trust 5c 
-              security clearance, and for it's website and online content be 
-              508 Compliant, meeting WCAG 2.0 AA accessibility standards.
+              with HTML, CSS, and JavaScript. IES requires a Public Trust 5c
+              security clearance, and for it's website and online content be 508
+              Compliant, meeting WCAG 2.0 AA accessibility standards.
             </p>
             <CardColumns>
               <Zoom>
                 <Card>
-                    <Img fluid={this.props.data.imageOne.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }} style={{width:'32vw'}} />
+                  <Img fluid={this.props.data.imageOne.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
                   {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="REL Central project example image." />
+                  <Img fluid={this.props.data.imageThree.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="REL Central project example image." />
+                  <Img fluid={this.props.data.imageTwo.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="REL Central project example image." />
+                  <Img fluid={this.props.data.imageFour.childImageSharp.fluid} imgStyle={{ objectFit: 'cover' }} />
+                  {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>
