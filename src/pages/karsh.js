@@ -2,11 +2,13 @@ import React, { Component } from "react"
 import { Row, Col, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/karsh/karshHero.jpg"
-import Image1 from '../images/projects/karsh/karsh-projectphoto-1.jpg'
-import Image2 from "../images/projects/karsh/karsh-projectphoto-2.jpg"
-import Image3 from "../images/projects/karsh/karsh-projectphoto-3.jpg"
-import Image4 from "../images/projects/karsh/karsh-projectphoto-4.jpg"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+// import Hero from "../images/projects/karsh/karshHero.jpg"
+// import Image1 from '../images/projects/karsh/karsh-projectphoto-1.jpg'
+// import Image2 from "../images/projects/karsh/karsh-projectphoto-2.jpg"
+// import Image3 from "../images/projects/karsh/karsh-projectphoto-3.jpg"
+// import Image4 from "../images/projects/karsh/karsh-projectphoto-4.jpg"
 import ImageGif from "../images/projects/karsh/karsh-projectphoto-5.gif"
 
 import ProjectGrid from "../components/projectGrid"
@@ -16,7 +18,50 @@ import Mixer from '../components/mixer'
 
 const pageId="karsh"
 
- 
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+         query {
+           projectHero: file(
+             relativePath: { eq: "projects/karsh/karshHero.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageOne: file(
+             relativePath: { eq: "projects/karsh/karsh-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/karsh/karsh-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/karsh/karsh-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/karsh/karsh-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
+
+
 class KarshHagan extends Component {
   state = {
     mixer: ``
@@ -31,40 +76,23 @@ class KarshHagan extends Component {
 
   render() {
 
-    // const data = useStaticQuery(graphql`
-    //   query MyQuery {
-    //     allFile(filter: {name: {regex: "/(karsh)/"}, relativeDirectory: {eq: "projects/karsh"}}) {
-    //       edges {
-    //         node {
-    //           base
-    //           childImageSharp {
-    //             fluid {
-    //               aspectRatio
-    //               base64
-    //               sizes
-    //               srcSet
-    //               src
-    //             }
-    //           }
-    //           relativePath
-    //           relativeDirectory
-    //         }
-    //       }
-    //     }
-    //   }
-    // `)
-
     return (
       <Layout>
         <SEO title="karsh" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            backgroundImage: `url(${Hero})`,
+            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
+            overflow: "hidden",
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="Karsh Hagan hero image."
+          />
           <div className="hero-copy flex-grow-1">
             {/* <h1>Karsh Hagan</h1> */}
           </div>
@@ -125,7 +153,7 @@ class KarshHagan extends Component {
               with a conversion focused landing page design aimed at donations.
             </p>
             <Card className="no-radius">
-              <Card.Img
+              {/* <Card.Img
                 src={Image1}
                 alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
@@ -149,6 +177,31 @@ class KarshHagan extends Component {
                 src={Image4}
                 alt="Karsh Hagan project example image."
                 style={{ marginBottom: 0, width: "100%" }}
+              /> */}
+              <Img
+                fluid={this.props.data.imageOne.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Karsh project example image."
+              />
+              <Img
+                fluid={this.props.data.imageTwo.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Karsh project example image."
+              />
+              <Img
+                fluid={this.props.data.imageThree.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Karsh project example image."
+              />
+              <Card.Img
+                src={ImageGif}
+                alt="Karsh Hagan project example image."
+                style={{ marginBottom: 0, width: "100%" }}
+              />
+              <Img
+                fluid={this.props.data.imageFour.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Karsh project example image."
               />
             </Card>
           </Col>

@@ -2,17 +2,62 @@ import React, { Component } from "react"
 import { Row, Col, CardColumns, Card, Button } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/relsite/relsiteHero.jpg"
-import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
-import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
-import Image3 from "../images/projects/relsite/relsite-projectphoto-3.jpg"
-import Image4 from "../images/projects/relsite/relsite-projectphoto-4.jpg"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+// import Hero from "../images/projects/relsite/relsiteHero.jpg"
+// import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
+// import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
+// import Image3 from "../images/projects/relsite/relsite-projectphoto-3.jpg"
+// import Image4 from "../images/projects/relsite/relsite-projectphoto-4.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
 import Zoom from "react-medium-image-zoom"
 
 const pageId="relsite"
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+         query {
+           projectHero: file(
+             relativePath: { eq: "projects/relsite/relsiteHero.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageOne: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/relsite/relsite-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
 
  
 class Relsite extends Component {
@@ -33,13 +78,19 @@ class Relsite extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            backgroundImage: `url(${Hero})`,
+            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 30%",
+            overflow: "hidden",
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="REL Central project hero image."
+          />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>REL Central Website</h1> */}
           </div>
         </div>
         <Row className="project-body">
@@ -85,29 +136,49 @@ class Relsite extends Component {
               updates on research findings, tools, and releases. As the web
               developer for the REL Central team, I manage the REL Central
               portion of the IES website, running on an ASP framework and built
-              with HTML, CSS, and JavaScript. IES requires a Public Trust 5c 
-              security clearance, and for it's website and online content be 
-              508 Compliant, meeting WCAG 2.0 AA accessibility standards.
+              with HTML, CSS, and JavaScript. IES requires a Public Trust 5c
+              security clearance, and for it's website and online content be 508
+              Compliant, meeting WCAG 2.0 AA accessibility standards.
             </p>
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageOne.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageThree.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageTwo.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageFour.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>
@@ -119,6 +190,5 @@ class Relsite extends Component {
     )
   }
 }
-
 
 export default Relsite

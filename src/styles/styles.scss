@@ -274,6 +274,11 @@ img {
     margin: 0 0 8vh 0;
     height: 50vh;
     background-repeat: no-repeat;
+    padding:0;
+}
+
+.project-hero .gatsby-image-wrapper {
+    width:100%;
 }
 
 .project-hero h1 {
@@ -287,6 +292,12 @@ img {
 
 .project-body {
     margin: 0 0 13vh 0;
+}
+
+.project-body [data-rmiz-wrap="visible"], .project-body [data-rmiz-wrap="hidden"] {
+    display: block;
+    width: 100%;
+    // height: 100%;
 }
 
 .project-group .card {

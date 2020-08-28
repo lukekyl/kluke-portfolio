@@ -2,21 +2,87 @@ import React, { Component } from "react"
 import { Row, Col, CardColumns, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/reldesign/reldesignHero.jpg"
-import Image1 from '../images/projects/reldesign/reldesign-projectphoto-1.jpg'
-import Image2 from "../images/projects/reldesign/reldesign-projectphoto-2.jpg"
-import Image3 from "../images/projects/reldesign/reldesign-projectphoto-3.jpg"
-import Image4 from "../images/projects/reldesign/reldesign-projectphoto-4.jpg"
-import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.jpg"
-import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.jpg"
-import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.jpg"
-import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.jpg"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+// import Hero from "../images/projects/reldesign/reldesignHero.jpg"
+// import Image1 from '../images/projects/reldesign/reldesign-projectphoto-1.jpg'
+// import Image2 from "../images/projects/reldesign/reldesign-projectphoto-2.jpg"
+// import Image3 from "../images/projects/reldesign/reldesign-projectphoto-3.jpg"
+// import Image4 from "../images/projects/reldesign/reldesign-projectphoto-4.jpg"
+// import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.jpg"
+// import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.jpg"
+// import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.jpg"
+// import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
 import Zoom from "react-medium-image-zoom"
 
 const pageId="reldesign"
+
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+         query {
+           projectHero: file(
+             relativePath: { eq: "projects/reldesign/reldesignHero.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageOne: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFive: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-5.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageSix: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-6.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageSeven: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-7.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageEight: file(
+             relativePath: { eq: "projects/reldesign/reldesign-projectphoto-8.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
 
  
 class Reldesign extends Component {
@@ -37,13 +103,19 @@ class Reldesign extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            backgroundImage: `url(${Hero})`,
+            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
+            overflow: "hidden",
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="REL Central project hero image."
+          />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>REL Central Design</h1> */}
           </div>
         </div>
         <Row className="project-body">
@@ -86,43 +158,83 @@ class Reldesign extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageTwo.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageThree.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image5} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageFive.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image5} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageOne.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageFour.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image6} alt="REL Central project example image." />
+                  <Img
+                    fluid={this.props.data.imageSix.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="REL Central project example image."
+                  />
+                  {/* <Card.Img src={Image6} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>
             <Zoom>
-              <Card>
-                <Card.Img src={Image8} alt="REL Central project example image." />
+              <Card style={{ marginBottom: '.75rem' }}>
+                <Img
+                  fluid={this.props.data.imageEight.childImageSharp.fluid}
+                  imgStyle={{ objectFit: "cover" }}
+                  alt="REL Central project example image."
+                />
+                {/* <Card.Img src={Image8} alt="REL Central project example image." /> */}
               </Card>
             </Zoom>
             <Zoom>
-              <Card>
-                <Card.Img src={Image7} alt="REL Central project example image." />
+              <Card style={{ marginBottom: '.75rem' }}>
+                <Img
+                  fluid={this.props.data.imageSeven.childImageSharp.fluid}
+                  imgStyle={{ objectFit: "cover" }}
+                  alt="REL Central project example image."
+                />
+                {/* <Card.Img src={Image7} alt="REL Central project example image." /> */}
               </Card>
             </Zoom>
           </Col>
