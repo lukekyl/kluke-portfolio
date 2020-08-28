@@ -2,15 +2,17 @@ import React, { Component } from "react"
 import { Row, Col, Card, Button, CardColumns } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/marzano/marzanoHero.jpg"
-import Image1 from '../images/projects/marzano/marzano-projectphoto-1.jpg'
-import Image2 from "../images/projects/marzano/marzano-projectphoto-2.jpg"
-import Image3 from "../images/projects/marzano/marzano-projectphoto-3.jpg"
-import Image4 from "../images/projects/marzano/marzano-projectphoto-4.jpg"
-import Image5 from "../images/projects/marzano/marzano-projectphoto-5.jpg"
-import Image6 from "../images/projects/marzano/marzano-projectphoto-6.jpg"
-import Image7 from "../images/projects/marzano/marzano-projectphoto-7.jpg"
-import Image8 from "../images/projects/marzano/marzano-projectphoto-8.jpg"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+// import Hero from "../images/projects/marzano/marzanoHero.jpg"
+// import Image1 from '../images/projects/marzano/marzano-projectphoto-1.jpg'
+// import Image2 from "../images/projects/marzano/marzano-projectphoto-2.jpg"
+// import Image3 from "../images/projects/marzano/marzano-projectphoto-3.jpg"
+// import Image4 from "../images/projects/marzano/marzano-projectphoto-4.jpg"
+// import Image5 from "../images/projects/marzano/marzano-projectphoto-5.jpg"
+// import Image6 from "../images/projects/marzano/marzano-projectphoto-6.jpg"
+// import Image7 from "../images/projects/marzano/marzano-projectphoto-7.jpg"
+// import Image8 from "../images/projects/marzano/marzano-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -18,6 +20,69 @@ import Zoom from "react-medium-image-zoom"
 
 const pageId="marzano"
 
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+         query {
+           projectHero: file(
+             relativePath: { eq: "projects/marzano/marzanoHero.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageOne: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFive: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-5.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageSix: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-6.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageSeven: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-7.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageEight: file(
+             relativePath: { eq: "projects/marzano/marzano-projectphoto-8.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
  
 class Marzano extends Component {
   state = {
@@ -37,13 +102,20 @@ class Marzano extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            backgroundImage: `url(${Hero})`,
+            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 50%",
+            overflow: "hidden",
+            width: '100%',
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="Marzano Research hero image."
+          />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>Marzano Research</h1> */}
           </div>
         </div>
         <Row className="project-body">
@@ -95,42 +167,82 @@ class Marzano extends Component {
             <CardColumns>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image1} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageOne.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image1} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image2} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageTwo.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image2} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image8} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageEight.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image8} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image7} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageSeven.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image7} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image3} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageThree.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image3} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image4} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageFour.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image4} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image6} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageSix.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image6} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
                 <Card>
-                  <Card.Img src={Image5} alt="Marzano Research project example image." />
+                  <Img
+                    fluid={this.props.data.imageFive.childImageSharp.fluid}
+                    imgStyle={{ objectFit: "cover" }}
+                    alt="Marzano Research project example image."
+                  />
+                  {/* <Card.Img src={Image5} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>
