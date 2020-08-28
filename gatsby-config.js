@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kyle Luke Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Hi! I'm Kyle Luke. I'm a Designer turned Developer in Denver. Check out my portfolio site!`,
     author: `Kyle Luke`,
   },
   plugins: [
@@ -26,6 +26,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/KLogo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-101112394-2",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

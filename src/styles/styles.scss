@@ -19,6 +19,8 @@ img {
 
 .navbar-toggler:focus {
     outline: none;
+    color: #fa7511;
+    transition: 0.4s ease-in-out;
 }
 
 .navbar .show {
@@ -209,7 +211,7 @@ img {
 }
 
 .project:hover {
-    border: 1px solid;
+    // border: 1px solid;
     border-image-slice: 1;
     border-width: 1px;
     border-image-source: linear-gradient(20deg, rgba(39,2,126,1) 0%, rgba(101,9,159,1) 35%, rgba(254,121,0,1) 100%);
