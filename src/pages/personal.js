@@ -2,16 +2,61 @@ import React, { Component } from "react"
 import { Row, Col, Card } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../images/projects/personal/personalHero.jpg"
-import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+// import Hero from "../images/projects/personal/personalHero.jpg"
+// import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
+// import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
+// import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
+// import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
 
 const pageId="personal"
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1600) {
+        ...GatsbyImageSharpFluid
+      }
+      original {
+        width
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+         query {
+           projectHero: file(
+             relativePath: { eq: "projects/personal/personalHero.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageOne: file(
+             relativePath: { eq: "projects/personal/personal-projectphoto-1.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageTwo: file(
+             relativePath: { eq: "projects/personal/personal-projectphoto-2.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageThree: file(
+             relativePath: { eq: "projects/personal/personal-projectphoto-3.jpg" }
+           ) {
+             ...fluidImage
+           }
+           imageFour: file(
+             relativePath: { eq: "projects/personal/personal-projectphoto-4.jpg" }
+           ) {
+             ...fluidImage
+           }
+         }
+       `
 
  
 class Personal extends Component {
@@ -32,13 +77,19 @@ class Personal extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            backgroundImage: `url(${Hero})`,
+            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
+            overflow: "hidden",
           }}
         >
+          <Img
+            fluid={this.props.data.projectHero.childImageSharp.fluid}
+            imgStyle={{ objectFit: "cover" }}
+            alt="Personal project hero image."
+          />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>Personal Projets</h1> */}
           </div>
         </div>
         <Row className="project-body">
@@ -71,7 +122,7 @@ class Personal extends Component {
               book toasting one of my favorite hobbies.
             </p>
             <Card className="no-radius">
-              <Card.Img
+              {/* <Card.Img
                 src={Image1}
                 alt="Personal project example image."
                 style={{ marginBottom: 0, width: "100%" }}
@@ -90,6 +141,26 @@ class Personal extends Component {
                 src={Image4}
                 alt="Personal project example image."
                 style={{ marginBottom: 0, width: "100%" }}
+              /> */}
+              <Img
+                fluid={this.props.data.imageOne.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Personalproject example image."
+              />
+              <Img
+                fluid={this.props.data.imageTwo.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Personal project example image."
+              />
+              <Img
+                fluid={this.props.data.imageThree.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Personal project example image."
+              />
+              <Img
+                fluid={this.props.data.imageFour.childImageSharp.fluid}
+                imgStyle={{ objectFit: "cover" }}
+                alt="Personal project example image."
               />
             </Card>
           </Col>
