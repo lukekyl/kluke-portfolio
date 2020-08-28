@@ -90,7 +90,7 @@ class Relsite extends Component {
             alt="REL Central project hero image."
           />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>REL Central Website</h1> */}
           </div>
         </div>
         <Row className="project-body">

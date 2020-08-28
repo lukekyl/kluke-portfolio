@@ -82,10 +82,10 @@ class Webact extends Component {
           <Img
             fluid={this.props.data.projectHero.childImageSharp.fluid}
             imgStyle={{ objectFit: "cover" }}
-            alt="Webact project example image."
+            alt="Webact hero image."
           />
           <div className="hero-copy flex-grow-1">
-            {/* <h1>Karsh Hagan</h1> */}
+            {/* <h1>Webact</h1> */}
           </div>
         </div>
         <Row className="project-body">

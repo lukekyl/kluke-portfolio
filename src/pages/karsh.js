@@ -91,7 +91,7 @@ class KarshHagan extends Component {
           <Img
             fluid={this.props.data.projectHero.childImageSharp.fluid}
             imgStyle={{ objectFit: "cover" }}
-            alt="Karsh project example image."
+            alt="Karsh Hagan hero image."
           />
           <div className="hero-copy flex-grow-1">
             {/* <h1>Karsh Hagan</h1> */}

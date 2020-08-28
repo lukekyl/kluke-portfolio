@@ -112,7 +112,7 @@ class Reldesign extends Component {
           <Img
             fluid={this.props.data.projectHero.childImageSharp.fluid}
             imgStyle={{ objectFit: "cover" }}
-            alt="REL Central project example image."
+            alt="REL Central project hero image."
           />
           <div className="hero-copy flex-grow-1">
             {/* <h1>REL Central Design</h1> */}
