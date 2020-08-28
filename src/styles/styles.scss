@@ -349,6 +349,10 @@ button[aria-label="Unzoom image"] {
 
 //xs
 @media screen and (max-width: 576px) {
+    .project-hero {
+        height: 30vh;
+    }
+
     .hero h1 {
         font-size: 4em;
     }
@@ -377,6 +381,10 @@ button[aria-label="Unzoom image"] {
 
 //sm
 @media screen and (max-width: 768px) {
+    .project-hero {
+        height: 40vh;
+    }
+
     .hero {
         text-align: center;
     }
