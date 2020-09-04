@@ -4,15 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/marzano/marzanoHero.jpg"
-// import Image1 from '../images/projects/marzano/marzano-projectphoto-1.jpg'
-// import Image2 from "../images/projects/marzano/marzano-projectphoto-2.jpg"
-// import Image3 from "../images/projects/marzano/marzano-projectphoto-3.jpg"
-// import Image4 from "../images/projects/marzano/marzano-projectphoto-4.jpg"
-// import Image5 from "../images/projects/marzano/marzano-projectphoto-5.jpg"
-// import Image6 from "../images/projects/marzano/marzano-projectphoto-6.jpg"
-// import Image7 from "../images/projects/marzano/marzano-projectphoto-7.jpg"
-// import Image8 from "../images/projects/marzano/marzano-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -102,7 +93,6 @@ class Marzano extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 50%",
             overflow: "hidden",
@@ -172,7 +162,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image1} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -182,7 +171,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image2} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -192,7 +180,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image8} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -202,7 +189,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image7} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -212,7 +198,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image3} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -222,7 +207,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image4} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -232,7 +216,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image6} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -242,7 +225,6 @@ class Marzano extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="Marzano Research project example image."
                   />
-                  {/* <Card.Img src={Image5} alt="Marzano Research project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>

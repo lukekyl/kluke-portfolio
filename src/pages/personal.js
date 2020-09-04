@@ -4,11 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/personal/personalHero.jpg"
-// import Image1 from '../images/projects/personal/personal-projectphoto-1.jpg'
-// import Image2 from "../images/projects/personal/personal-projectphoto-2.jpg"
-// import Image3 from "../images/projects/personal/personal-projectphoto-3.jpg"
-// import Image4 from "../images/projects/personal/personal-projectphoto-4.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -77,7 +72,6 @@ class Personal extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
             overflow: "hidden",
@@ -122,26 +116,6 @@ class Personal extends Component {
               book toasting one of my favorite hobbies.
             </p>
             <Card className="no-radius">
-              {/* <Card.Img
-                src={Image1}
-                alt="Personal project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image2}
-                alt="Personal project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image3}
-                alt="Personal project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image4}
-                alt="Personal project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              /> */}
               <Img
                 fluid={this.props.data.imageOne.childImageSharp.fluid}
                 imgStyle={{ objectFit: "cover" }}

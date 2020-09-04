@@ -4,11 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/relsite/relsiteHero.jpg"
-// import Image1 from '../images/projects/relsite/relsite-projectphoto-1.jpg'
-// import Image2 from "../images/projects/relsite/relsite-projectphoto-2.jpg"
-// import Image3 from "../images/projects/relsite/relsite-projectphoto-3.jpg"
-// import Image4 from "../images/projects/relsite/relsite-projectphoto-4.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -78,7 +73,6 @@ class Relsite extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 30%",
             overflow: "hidden",
@@ -148,7 +142,6 @@ class Relsite extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -158,7 +151,6 @@ class Relsite extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -168,7 +160,6 @@ class Relsite extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -178,7 +169,6 @@ class Relsite extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>

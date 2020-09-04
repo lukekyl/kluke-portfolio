@@ -4,17 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/karsh/karshHero.jpg"
-// import Image1 from '../images/projects/karsh/karsh-projectphoto-1.jpg'
-// import Image2 from "../images/projects/karsh/karsh-projectphoto-2.jpg"
-// import Image3 from "../images/projects/karsh/karsh-projectphoto-3.jpg"
-// import Image4 from "../images/projects/karsh/karsh-projectphoto-4.jpg"
+
 import ImageGif from "../images/projects/karsh/karsh-projectphoto-5.gif"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
-// import { useStaticQuery, graphql } from "gatsby"
-// import Img from 'gatsby-image'
+
 
 const pageId="karsh"
 
@@ -82,7 +77,6 @@ class KarshHagan extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
             overflow: "hidden",
@@ -153,31 +147,6 @@ class KarshHagan extends Component {
               with a conversion focused landing page design aimed at donations.
             </p>
             <Card className="no-radius">
-              {/* <Card.Img
-                src={Image1}
-                alt="Karsh Hagan project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image2}
-                alt="Karsh Hagan project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image3}
-                alt="Karsh Hagan project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={ImageGif}
-                alt="Karsh Hagan project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image4}
-                alt="Karsh Hagan project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              /> */}
               <Img
                 fluid={this.props.data.imageOne.childImageSharp.fluid}
                 imgStyle={{ objectFit: "cover" }}

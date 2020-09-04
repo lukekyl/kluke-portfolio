@@ -4,10 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/webact/webactHero.jpg"
-// import Image1 from '../images/projects/webact/webact-projectphoto-1.jpg'
-// import Image2 from "../images/projects/webact/webact-projectphoto-2.jpg"
-// import Image3 from "../images/projects/webact/webact-projectphoto-3.jpg"
+
 import Image4 from "../images/projects/webact/webact-projectphoto-4.gif"
 
 import ProjectGrid from "../components/projectGrid"
@@ -73,7 +70,6 @@ class Webact extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
             overflow: "hidden",
@@ -125,26 +121,6 @@ class Webact extends Component {
               across several platforms for targeted advertising.
             </p>
             <Card className="no-radius">
-              {/* <Card.Img
-                src={Image1}
-                alt="WebAct project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image2}
-                alt="WebAct project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image3}
-                alt="WebAct project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              />
-              <Card.Img
-                src={Image4}
-                alt="WebAct project example image."
-                style={{ marginBottom: 0, width: "100%" }}
-              /> */}
               <Img
                 fluid={this.props.data.imageOne.childImageSharp.fluid}
                 imgStyle={{ objectFit: "cover" }}

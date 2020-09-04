@@ -4,15 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-// import Hero from "../images/projects/reldesign/reldesignHero.jpg"
-// import Image1 from '../images/projects/reldesign/reldesign-projectphoto-1.jpg'
-// import Image2 from "../images/projects/reldesign/reldesign-projectphoto-2.jpg"
-// import Image3 from "../images/projects/reldesign/reldesign-projectphoto-3.jpg"
-// import Image4 from "../images/projects/reldesign/reldesign-projectphoto-4.jpg"
-// import Image5 from "../images/projects/reldesign/reldesign-projectphoto-5.jpg"
-// import Image6 from "../images/projects/reldesign/reldesign-projectphoto-6.jpg"
-// import Image7 from "../images/projects/reldesign/reldesign-projectphoto-7.jpg"
-// import Image8 from "../images/projects/reldesign/reldesign-projectphoto-8.jpg"
 
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
@@ -103,7 +94,6 @@ class Reldesign extends Component {
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
-            // backgroundImage: `url(${Hero})`,
             backgroundSize: "cover",
             backgroundPosition: "50% 65%",
             overflow: "hidden",
@@ -163,7 +153,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image2} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -173,7 +162,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image3} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -183,7 +171,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image5} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -193,7 +180,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image1} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -203,7 +189,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image4} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
               <Zoom>
@@ -213,7 +198,6 @@ class Reldesign extends Component {
                     imgStyle={{ objectFit: "cover" }}
                     alt="REL Central project example image."
                   />
-                  {/* <Card.Img src={Image6} alt="REL Central project example image." /> */}
                 </Card>
               </Zoom>
             </CardColumns>
@@ -224,7 +208,6 @@ class Reldesign extends Component {
                   imgStyle={{ objectFit: "cover" }}
                   alt="REL Central project example image."
                 />
-                {/* <Card.Img src={Image8} alt="REL Central project example image." /> */}
               </Card>
             </Zoom>
             <Zoom>
@@ -234,7 +217,6 @@ class Reldesign extends Component {
                   imgStyle={{ objectFit: "cover" }}
                   alt="REL Central project example image."
                 />
-                {/* <Card.Img src={Image7} alt="REL Central project example image." /> */}
               </Card>
             </Zoom>
           </Col>
