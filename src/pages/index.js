@@ -5,8 +5,8 @@ import Emoji from "react-emoji-render"
 import Lottie from "react-lottie"
 import * as moodbubble from "../images/lottie/5283-mood-bubble.json"
 import { AiFillLinkedin } from "react-icons/ai"
-import { FaMountain, FaDev, FaGithubSquare } from "react-icons/fa"
-import { MdLaptopMac, MdPhotoLibrary, MdEmail } from "react-icons/md"
+import { FaDev, FaGithubSquare } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -58,7 +58,7 @@ class IndexPage extends Component {
       <Layout>
         <SEO title="Home" />
         <div className="hero d-flex align-items-center">
-          <div className="hero-copy flex-grow-1">
+          <div className="hero-copy flex-grow-1 fade-in">
             <h1>
               Hi.
               <br />
@@ -69,7 +69,7 @@ class IndexPage extends Component {
               <Emoji text=":v:" style={{ fontSize: "1.7em" }} />
             </h2>
           </div>
-          <div className="lottie-container d-none d-lg-block">
+          <div className="lottie-container d-none d-lg-block fade-in">
             <Lottie
               role={"none"}
               options={defaultOptions}
@@ -84,18 +84,13 @@ class IndexPage extends Component {
             </AnchorLink>
           </div>
         </div>
-        <div
-          className="socials"
-          style={{
-            opacity: `${this.state.opacity}`,
-          }}
-        >
+        <div className="socials" style={{ opacity: `${this.state.opacity}`}} >
           <Row className="contact-icons fade-in">
             <Col><Button variant="dark" href="https://www.linkedin.com/in/kylewluke/" target=""><AiFillLinkedin /></Button></Col>
             <Col><Button variant="dark" href="https://github.com/lukekyl" target="_blank"><FaGithubSquare /></Button></Col>
             <Col><Button variant="dark" href="https://dev.to/lukekyl" target="_blank"><FaDev /></Button></Col>
             <Col><Button variant="dark" href="mailto:luke.kylew@gmail.com" ><MdEmail /></Button></Col>
-        </Row>
+          </Row>
         </div>
         <ProjectGrid />
         {this.state.mixer}
