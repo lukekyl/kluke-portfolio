@@ -514,7 +514,8 @@ button[aria-label="Unzoom image"] {
     }
 
     .socials {
-        height:22vh !important;
+        // height:22vh !important;
+        display:none !important;
     }
 
 }
