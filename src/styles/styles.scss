@@ -505,8 +505,21 @@ button[aria-label="Unzoom image"] {
         width: 95vw !important;
     }
 
+    .about h2 {
+        margin-bottom: 4vh;
+    }
+
+    .about hr {
+        margin: 4vh 0;
+    }
+
     .about-icons {
         font-size: 1em;
+        margin: 3vh 0;
+    }
+
+    .contact-icons {
+        margin: 4vh 0;
     }
 
     .project-stick {
