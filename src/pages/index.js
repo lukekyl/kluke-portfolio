@@ -1,8 +1,12 @@
 import React, { Component } from "react"
+import { Col, Row, Button } from 'react-bootstrap'
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Emoji from "react-emoji-render"
 import Lottie from "react-lottie"
 import * as moodbubble from "../images/lottie/5283-mood-bubble.json"
+import { AiFillLinkedin } from "react-icons/ai"
+import { FaMountain, FaDev, FaGithubSquare } from "react-icons/fa"
+import { MdLaptopMac, MdPhotoLibrary, MdEmail } from "react-icons/md"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,7 +28,6 @@ class IndexPage extends Component {
 
   state = {
     mixer: ``,
-    bottom: '0px',
     opacity: '1'
   }
   
@@ -37,11 +40,14 @@ class IndexPage extends Component {
     if (typeof window !== "undefined") {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos > 0 && currentScrollPos < window.innerHeight) {
-          this.setState({ bottom: "0", opacity: "0" })
-          console.log("hidden")
+        let body = document.body;
+        let maxScroll = body.scrollHeight - window.innerHeight;
+        console.log(maxScroll)
+        if (currentScrollPos > 0 && currentScrollPos < maxScroll) {
+          this.setState({ opacity: "0" })
+          console.log(currentScrollPos)
         } else {
-          this.setState({ bottom: "0px", opacity: "1" })
+          this.setState({ opacity: "1" })
         }
       }
     }
@@ -81,16 +87,15 @@ class IndexPage extends Component {
         <div
           className="socials"
           style={{
-            position: "fixed",
             opacity: `${this.state.opacity}`,
-            bottom:`${this.state.bottom}`,
-            width: "90vw",
-            top: "none",
-            transition: '.15s ease',
-            textAlign:'center'
           }}
         >
-          <h1>Test</h1>
+          <Row className="contact-icons fade-in">
+            <Col><Button variant="dark" href="https://www.linkedin.com/in/kylewluke/" target=""><AiFillLinkedin /></Button></Col>
+            <Col><Button variant="dark" href="https://github.com/lukekyl" target="_blank"><FaGithubSquare /></Button></Col>
+            <Col><Button variant="dark" href="https://dev.to/lukekyl" target="_blank"><FaDev /></Button></Col>
+            <Col><Button variant="dark" href="mailto:luke.kylew@gmail.com" ><MdEmail /></Button></Col>
+        </Row>
         </div>
         <ProjectGrid />
         {this.state.mixer}
