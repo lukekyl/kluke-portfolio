@@ -37,11 +37,11 @@ class IndexPage extends Component {
     if (typeof window !== "undefined") {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos > 0) {
-          this.setState({ bottom: "-5rem", opacity: '0' })
-          console.log('hidden')
+        if (currentScrollPos > 0 && currentScrollPos < window.innerHeight) {
+          this.setState({ bottom: "0", opacity: "0" })
+          console.log("hidden")
         } else {
-          this.setState({ bottom: "0px", opacity:'1' })
+          this.setState({ bottom: "0px", opacity: "1" })
         }
       }
     }
@@ -86,7 +86,8 @@ class IndexPage extends Component {
             bottom:`${this.state.bottom}`,
             width: "90vw",
             top: "none",
-            transition: '.08s ease'
+            transition: '.15s ease',
+            textAlign:'center'
           }}
         >
           <h1>Test</h1>
