@@ -14,13 +14,13 @@ img {
 
 .navbar-toggler:hover {
     color:#fa7511;
-    transition:  0.4s ease-in-out;
+    transition:  0.2s ease-in-out;
 }
 
 .navbar-toggler:focus {
     outline: none;
     color: #fa7511;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .navbar .show {
@@ -50,7 +50,80 @@ img {
 
 .navbar-nav a:hover, .navbar-nav a:focus  {
     color: #fa7511;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.socials {
+    z-index:200;
+    position: fixed;
+    top: none;
+    bottom:0;
+    height:12vh;
+    width: 90vw;
+    transition: opacity .1s ease;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.socials .row {
+    width:50%;
+}
+
+.socials .col {
+    text-align: center;
+    padding:0;   
+}
+
+.socials a {
+    min-width: 2em !important;
+    width:2em !important;
+    height:2em;
+    border-radius: 50%;
+    border:none;
+    margin:auto;
+}
+
+.socials .btn {
+    padding: 0;
+    background-color:white !important;
+}
+
+.socials svg {
+    margin-top:6px;
+    width: 1.4em !important;
+    height: 1.4em !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    transition: 0.2s ease-in-out;
+}
+
+.socials svg:hover {
+    color: #fa7511 !important;
+    transition: 0.2s ease-in-out;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1s ease both;
+	        animation: fade-in 1s ease both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .about {
@@ -440,6 +513,10 @@ button[aria-label="Unzoom image"] {
         margin-bottom: 4vh;
     }
 
+    .socials {
+        height:22vh !important;
+    }
+
 }
 
 //small-medium
@@ -462,6 +539,10 @@ button[aria-label="Unzoom image"] {
 
     .project-grid h2 {
         font-size: 1.3em;
+    }
+
+    .socials {
+        height:16vh;
     }
 
 }
