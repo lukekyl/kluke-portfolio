@@ -81,7 +81,7 @@ img {
     min-width: 2em !important;
     width:2em !important;
     height:2em;
-    border-radius: 50%;
+    // border-radius: 50%;
     border:none;
     margin:auto;
 }
@@ -529,6 +529,7 @@ button[aria-label="Unzoom image"] {
 
     .socials {
         height:18vh !important;
+        display:flex !important;
     }
 
 }
@@ -556,7 +557,8 @@ button[aria-label="Unzoom image"] {
     }
 
     .socials {
-        height:15vh;
+        // height:16vh;
+        display:none;
     }
 
 }
