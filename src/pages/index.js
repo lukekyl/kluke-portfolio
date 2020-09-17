@@ -40,12 +40,11 @@ class IndexPage extends Component {
     if (typeof window !== "undefined") {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
-        let body = document.body;
-        let maxScroll = body.scrollHeight - window.innerHeight;
-        console.log(maxScroll)
+        let maxScroll = document.body.scrollHeight - window.innerHeight;
+        // console.log(maxScroll)
         if (currentScrollPos > 0 && currentScrollPos < maxScroll) {
           this.setState({ opacity: "0" })
-          console.log(currentScrollPos)
+          // console.log(currentScrollPos)
         } else {
           this.setState({ opacity: "1" })
         }
