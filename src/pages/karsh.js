@@ -118,7 +118,7 @@ class KarshHagan extends Component {
               design grad, I was able to intern under their design and
               interactive team, learning tons about the industry and agency
               life. Among other things like assisting the team with client and
-              in-house design work, intern team was able to work on the agency's
+              in-house design work, the intern team was able to work on the agency's
               non-profit client projects. Pet's For Patriots was one of those
               non-profit clients, highlighted below.
             </p>

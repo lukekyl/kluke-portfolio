@@ -254,7 +254,7 @@ class ProjectList extends Component {
           <Card.Footer>
             <small className="text-muted">
               Active Server Pages Framework • Section 508 & WCAG 2.0 AA
-              Accessibility Minimum
+              Accessibility
             </small>
           </Card.Footer>
         </Card>
