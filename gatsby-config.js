@@ -33,6 +33,7 @@ module.exports = {
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-101112394-2",
+        head: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
