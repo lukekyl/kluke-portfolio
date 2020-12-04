@@ -170,7 +170,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
-                  Marzano Research
+                  <Link to='/marzano/'>Marzano Research</Link>
                 </Card.Title>
               </Col>
               <Col className="project-links">
@@ -217,7 +217,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
-                  REL Central Website
+                  <Link to='/relsite/'>REL Central Website</Link>
                 </Card.Title>
               </Col>
               <Col className="project-links">
@@ -264,7 +264,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
-                  REL Central Design
+                  <Link to="/reldesign/">REL Central Design</Link>
                 </Card.Title>
               </Col>
               <Col className="project-links">
@@ -299,7 +299,7 @@ class ProjectList extends Component {
           <Card.Body className="project-card">
             <Row>
               <Col md={7} lg={12} xl={8}>
-                <Card.Title className="project-title">WebAct</Card.Title>
+                <Card.Title className="project-title"><Link to="/webact/">WebAct</Link></Card.Title>
               </Col>
               <Col className="project-links">
                 <Link to="/webact/">
@@ -334,7 +334,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
-                  Karsh Hagan
+                  <Link to="/karsh/">Karsh Hagan</Link>
                 </Card.Title>
               </Col>
               <Col className="project-links">
@@ -370,7 +370,7 @@ class ProjectList extends Component {
             <Row>
               <Col md={7} lg={12} xl={8}>
                 <Card.Title className="project-title">
-                  Personal Design
+                  <Link to="/personal/">Personal Design</Link>
                 </Card.Title>
               </Col>
               <Col className="project-links">
