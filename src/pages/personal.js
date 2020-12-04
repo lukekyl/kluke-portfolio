@@ -68,7 +68,12 @@ class Personal extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Personal Projects" />
+        <SEO 
+          title="Personal Projects"
+          description="A few of the fun projects I have made, because ... why not!"
+          image={this.props.data.projectHero.childImageSharp.fluid}
+          pathname={this.props.location.pathname}
+        />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

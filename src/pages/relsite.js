@@ -69,7 +69,12 @@ class Relsite extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="REL Site" />
+        <SEO 
+          title="REL Site"
+          description="Development and management of REL Central portion of the Institute of Educational Sciences website."
+          image={this.props.data.projectHero.childImageSharp.fluid}
+          pathname={this.props.location.pathname}
+        />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

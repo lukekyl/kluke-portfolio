@@ -67,6 +67,12 @@ class Webact extends Component {
     return (
       <Layout>
         <SEO title="WebAct" />
+        <SEO 
+          title="WebAct"
+          description="Website design agency for small business specializing in SEO and PPC ad campaign management."
+          image={this.props.data.projectHero.childImageSharp.fluid}
+          pathname={this.props.location.pathname}
+        />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

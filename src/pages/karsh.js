@@ -73,7 +73,12 @@ class KarshHagan extends Component {
 
     return (
       <Layout>
-        <SEO title="Karsh Hagan" />
+        <SEO 
+          title="Karsh Hagan"
+          description="UX Design internship mixed with some art direction and graphic design for non-profits."
+          image={this.props.data.projectHero.childImageSharp.fluid}
+          pathname={this.props.location.pathname}
+        />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
