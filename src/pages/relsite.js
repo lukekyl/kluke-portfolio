@@ -69,7 +69,7 @@ class Relsite extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="REL Site | kyleluke.dev" />
+        <SEO title="REL Site" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

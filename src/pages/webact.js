@@ -66,7 +66,7 @@ class Webact extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="WebAct | kyleluke.dev" />
+        <SEO title="WebAct" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

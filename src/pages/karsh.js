@@ -73,7 +73,7 @@ class KarshHagan extends Component {
 
     return (
       <Layout>
-        <SEO title="Karsh Hagan | kyleluke.dev" />
+        <SEO title="Karsh Hagan" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
