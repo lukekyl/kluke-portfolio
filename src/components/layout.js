@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 // import { Navbar } from 'react-bootstrap'
-import SEO from "./seo"
+
 import Header from "./header"
 import Footer from "./footer"
 
@@ -31,22 +31,9 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const siteTitle = data.site.siteMetadata.title
-    const image = post.frontmatter.image
-      ? post.frontmatter.image.childImageSharp.resize
-      : null
-
-  console.log(post.frontmatter)
-
   return (
     <>
-      <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-          image={image}
-          pathname={this.props.location.pathname}
-      />
-      <Header siteTitle={siteTitle} />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `2vh auto`,

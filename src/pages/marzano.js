@@ -89,7 +89,12 @@ class Marzano extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Marzano Research" />
+        <SEO 
+          title="Marzano Research" 
+          description="Learn more about my work as a Graphic and Web Designer at Marzano Research"
+          image={this.props.data.projectHero.childImageSharp.fluid}
+          pathname={this.props.location.pathname}
+        />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
@@ -150,8 +155,8 @@ class Marzano extends Component {
             <p>
               With the recent ownership change, I have had the opportunity to
               lead the design work for the company rebrand. This includes a
-              building and managing a new website, logo and brand work. Some
-              client projects also require a variety of design work including
+              building and managing a new website, logo and brand work. I also manage
+              client projects that require a variety of design work including
               wireframes, handouts and infographics.
             </p>
             <CardColumns>
