@@ -264,6 +264,16 @@ img {
     overflow: hidden;
 }
 
+.project-grid a {
+    color:#000;
+    text-decoration: none;
+}
+
+.project-grid a:hover {
+    color:darkgray;
+    text-decoration: none;
+}
+
 .project-grid .card-deck {
     padding: 0;
     margin:0 -5px;
@@ -374,7 +384,7 @@ img {
     margin:.5vw .5vh;
 }
 
-.project-grid #active {
+.project-grid #active, .project-grid #active a {
     color: white;
     border:1px solid rgba(255, 255, 255, 0.6);
     background: #3c4043;
