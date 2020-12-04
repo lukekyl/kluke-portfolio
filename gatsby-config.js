@@ -3,7 +3,7 @@ module.exports = {
     title: `Kyle Luke Portfolio`,
     description: `Hi! I'm Kyle Luke. I'm a Designer turned Developer in Denver. Check out my portfolio site!`,
     author: `Kyle Luke`,
-    siteURL: 'https://www.kyleluke.dev'
+    siteUrl: 'https://www.kyleluke.dev'
   },
   plugins: [
     `gatsby-plugin-sass`,
