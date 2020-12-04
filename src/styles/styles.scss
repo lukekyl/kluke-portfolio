@@ -270,7 +270,7 @@ img {
 }
 
 .project-grid .project-title a:hover {
-    color:#F2795B;
+    color:#3c4043;
     text-decoration: none;
 }
 
@@ -384,7 +384,7 @@ img {
     margin:.5vw .5vh;
 }
 
-.project-grid #active, .project-grid #active .project-title a {
+.project-grid #active {
     color: white;
     border:1px solid rgba(255, 255, 255, 0.6);
     background: #3c4043;
