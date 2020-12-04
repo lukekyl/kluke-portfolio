@@ -91,7 +91,7 @@ class Marzano extends Component {
       <Layout>
         <SEO 
           title="Marzano Research" 
-          description="Learn more about my work as a Graphic and Web Designer at Marzano Research"
+          description="Lead design, website and branding efforts for new ownership rebranding and all client-based design needs."
           image={this.props.data.projectHero.childImageSharp.fluid}
           pathname={this.props.location.pathname}
         />
@@ -120,7 +120,7 @@ class Marzano extends Component {
                 <Card.Body>
                   <h2>Marzano Research</h2>
                   <p>
-                    Lead design efforts for new ownership rebranding and all
+                    Lead design, website and branding efforts for new ownership rebranding and all
                     client-based design needs.
                   </p>
                   <Button
