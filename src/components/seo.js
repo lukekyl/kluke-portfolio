@@ -32,6 +32,8 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       : null
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
+  console.log(site.siteMetadata)
+
   return (
     <Helmet
       htmlAttributes={{
