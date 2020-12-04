@@ -68,7 +68,7 @@ class Personal extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="personal" />
+        <SEO title="Personal Projects | kyleluke.dev" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

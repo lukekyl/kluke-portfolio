@@ -55,7 +55,7 @@ class IndexPage extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Home | kyleluke.dev" />
         <div className="hero d-flex align-items-center">
           <div className="hero-copy flex-grow-1 fade-in">
             <h1>

@@ -89,7 +89,7 @@ class Marzano extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="marzano" />
+        <SEO title="Marzano Research | kyleluke.dev" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{

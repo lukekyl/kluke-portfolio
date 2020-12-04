@@ -90,7 +90,7 @@ class Reldesign extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="reldesign" />
+        <SEO title="REL Design | kyleluke.dev" />
         <div
           className="hero project-hero d-flex align-items-center"
           style={{
