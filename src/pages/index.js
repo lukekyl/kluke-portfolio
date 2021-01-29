@@ -64,7 +64,7 @@ class IndexPage extends Component {
               I'm <span>Kyle</span>.
             </h1>
             <h2>
-              <span>Software Engineer with Design experience</span>{" "}
+              <span>Software Engineer with Design background</span>{" "}
               <Emoji text=":v:" style={{ fontSize: "1.7em" }} />
             </h2>
           </div>
