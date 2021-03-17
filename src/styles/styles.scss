@@ -213,25 +213,60 @@ img {
     font-weight: 700;
 }
 
-.hero .lottie-container {
-    overflow: hidden;
-    justify-content: center;
+.hero .blob-container {
+    // overflow: hidden;
+    width: 20vw;
+    height:100%;
 }
 
-.hero .lottie-container h4 {
-    color:white;
+.hero .blob-container #blob {
+    opacity: 1;
+    width: 120%;
+    filter:blur(40px) contrast(.6) saturate(100%) opacity(70%) brightness(1.4) sepia(40%) drop-shadow(60px 60px 80px #ae6dac);
+    animation: fadein 4s;
+    position: relative;
+    top: 50%;
+    right: 0%;
+    transform: perspective(1px) translateY(-50%);
+    -webkit-transform: perspective(1px) translateY(-50%);
+    -ms-transform: perspective(1px) translateY(-50%);
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
+}
+
+.hero .blob-container h4 {
+    margin: 0;
+    border-radius: 50%;
+    border: solid 1px rgba(255,255,255,0.5);
+    width: 8em;
+    height:8em;
+    z-index: 1;
+    color:rgba(255,255,255,0.5);
+    text-shadow: 1px rgba(255,255,255,0.9);
+    display: flex;
     text-decoration: none;
     text-align: center;
-    position: relative;
-    top:-25vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 44%;
+    right: 18%;
+    animation: fadein 6s;
+    transition:.8s ease-in-out;
 }
 
-.hero .lottie-container h4:hover, .hero .lottie-container a:hover{
-    color:white;
+.hero .blob-container h4:hover{
+    color:rgba(255,255,255,1);
+    background: rgba(255,255,255,.1);
     text-decoration: none;
+    border: solid 1px rgba(255,255,255,.8);
+    transition:.8s ease-in-out;
 }
 
-.hero .lottie-container *[role=button]{
+.hero .blob-container *[role=button]{
     overflow: hidden;
     cursor: default;
     width: 60vh;
@@ -432,7 +467,6 @@ button[aria-label="Unzoom image"] {
 }
 
 
-
 // Media Options
 
 //xs
@@ -450,17 +484,17 @@ button[aria-label="Unzoom image"] {
         margin:0;
     }
 
-    .hero .lottie-container *[role=button]{
+    .hero .blob-container *[role=button]{
         width: 30vh;
         height: 40vh;
     }
 
-    .hero .lottie-container {
+    .hero .blob-container {
         margin-top: -30vh;
 
     }
 
-    .lottie-container svg {
+    .blob-container svg {
         height: 80vh !important;
         width: 80vw !important;
     }
