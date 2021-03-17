@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { Col, Row, Button } from 'react-bootstrap'
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Emoji from "react-emoji-render"
-import Lottie from "react-lottie"
-import * as moodbubble from "../images/lottie/5283-mood-bubble.json"
+// import Lottie from "react-lottie"
+// import * as moodbubble from "../images/lottie/5283-mood-bubble.json"
 import { AiFillLinkedin } from "react-icons/ai"
 import { FaDev, FaGithubSquare } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
@@ -12,15 +12,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectGrid from "../components/projectGrid"
 import Mixer from '../components/mixer'
+import GradientBlob from '../components/gradientblob'
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: moodbubble.default,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  }
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: moodbubble.default,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // }
 
   
 
@@ -68,16 +69,8 @@ class IndexPage extends Component {
               <Emoji text=":v:" style={{ fontSize: "1.7em" }} />
             </h2>
           </div>
-          <div className="lottie-container d-none d-lg-block fade-in">
-            <Lottie
-              role={"none"}
-              options={defaultOptions}
-              height={"60vh"}
-              width={"60vh"}
-              speed={0.1}
-              isStopped={false}
-              isPaused={false}
-            />
+          <div className="blob-container flex-shrink-0 d-none d-lg-block fade-in">
+            <GradientBlob />
             <AnchorLink href="#selected-projects" offset="75">
               <h4>See My Work</h4>
             </AnchorLink>
