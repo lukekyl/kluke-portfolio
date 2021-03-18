@@ -8,15 +8,15 @@ const GradientBlob = () => {
       
 
   React.useEffect(() => {
-    const blob = new DrawBlob({
+    new DrawBlob({
       canvas: document.getElementById('blob'),
-      speed: 200,
-      scramble: 0.1,
+      speed: 900,
+      scramble: 0.9,
       colorFunction: (ctx) => {
-        const gradient = ctx.createLinearGradient(25, 45, 30, 40);
-        gradient.addColorStop(0, 'rgba(254,121,0,1)');
+        const gradient = ctx.createLinearGradient(0, 6, 7, 0);
+        gradient.addColorStop(0, 'rgba(275,110,0,1)');
         gradient.addColorStop(0.5, 'rgba(101,9,159,1)');
-        gradient.addColorStop(1, 'rgba(39,2,126,1)');
+        gradient.addColorStop(1, 'rgba(20,38,114,1)');
         return gradient
       },
     });
